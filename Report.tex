@@ -1,0 +1,97 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{listings} % used to write pieces of code
+\usepackage{xcolor}
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Prova Finale - Reti Logiche (prof. William Fornaciari)}
+\author{Corigliano Emilio 10627041 - 907936}
+\date{A.A. 2020/21} % Activate to display a given date or no date (if empty)
+
+\begin{document}
+\maketitle
+
+\section{Considerazioni e scelte implementative}
+
+\begin{itemize}
+\item Non è necessario distinguere le varie righe, si può trattare la memoria semplicemente come un vettore di dimensione $N = R \cdot C$ da analizzare sequenzialmente
+% una volta trovati i byte di valore massimo ($MAX\_PV$) e minimo ($MIN\_PV$)
+
+\item Ogni byte in input all'indirizzo $mem[2+i]$ dovrà essere processato e l'output dovrà essere scritto in memoria all'indirizzo $mem[2+ N +i]$, con $i \in [0, N)$
+\end{itemize}
+
+\subsection{Fasi}
+\begin{itemize}
+\item una prima fase nella quale si calcola la dimensione dell'immagine $N$ da equalizzare. Questo valore è ottenuto moltiplicando $mem[0]$ e $mem[1]$.
+\item una seconda fase nella quale si cercano i $MAX\_PV$ e $MIN\_PV$: si scorre una volta tutta l'immagine e si cercano contemporaneamente il valore massimo e minimo dei pixel presenti nell'immagine
+\item una terza fase nella quale si calcola lo $SHIFT\_LEVEL$, usando un metodo a soglie
+	\begin{lstlisting}[language=Python, caption=Generazione di soglie]
+for i in range(256):
+	print(str(i) + ": " + str(8 - math.floor(math.log2(i+1))))
+	\end{lstlisting}
+\item una quarta fase che è la vera e propria elaborazione dell'immagine, nella quale si scorre pixel per pixel, elaborandolo e scrivendolo nella regione di output della memoria (input: $mem[2+i]$; output: $mem[2+N+i]$)
+\end{itemize}
+ 
+\subsection{Registri}
+\begin{itemize}
+\item $RegN$: memorizza il numero totale di byte che compongono l'immagine
+\item $RegMaxPL$: memorizza il livello massimo dei pixel presente nell'immagine
+\item $RegMinPL$: memorizza il livello minimo dei pixel presente nell'immagine	
+\item $RegShiftLevel$: memorizza lo $SHIFT\_LEVEL$, può essere computato a soglie dato che il delta value è l'unica variabile.
+\item un contatore caricabile con un valore variabile che permetta di eseguire la moltiplicazione iniziale o che possa scorrere per tutto il vettore l'immagine
+
+	
+\end{itemize}
+
+\end{document}

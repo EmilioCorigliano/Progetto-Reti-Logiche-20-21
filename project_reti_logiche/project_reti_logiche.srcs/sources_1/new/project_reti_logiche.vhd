@@ -89,7 +89,6 @@ signal muxSL_in : std_logic_vector (7 downto 0);
 signal rSL_in : std_logic_vector (3 downto 0);
 signal rSL_out : std_logic_vector (3 downto 0);
 
-signal r3_out : std_logic_vector (7 downto 0);
 signal rC3_in : std_logic_vector (15 downto 0);
 signal rC3_out : std_logic_vector (15 downto 0);
 signal o_address_tmp : std_logic_vector (15 downto 0);
@@ -113,12 +112,8 @@ signal MaxMin_end : std_logic;
 
 -- phase 3: compute the shift level
 signal rSL_load : std_logic;
-signal rSL_sel : std_logic;
-signal phase2_sel : std_logic_vector (1 downto 0);
-signal SL_end : std_logic;
 
 -- phase 4: compute all the pixel values
-signal r3_load : std_logic;
 signal phase3_sel : std_logic;
 signal pixel_new : std_logic_vector (8 downto 0);
 signal rC3_load : std_logic;
@@ -129,8 +124,9 @@ signal computation_end : std_logic;
 type States is (
     WAIT_BEGIN, READ_COLUMNS, READ_ROWS, COMPUTE_N,
     PREPARE_MAXMIN_PHASE, COMPUTE_MAXMIN,
-    PREPARE_SL_PHASE, COMPUTE_SL,
-    PREPARE_COMPUTATION, READ_PIXEL, WRITE_PIXEL
+    COMPUTE_SL,
+    PREPARE_COMPUTATION, READ_PIXEL, WRITE_PIXEL,
+    END_COMPUTATION
 );
 signal cur_state, next_state : States;
 
@@ -154,7 +150,7 @@ begin
                     o_address_tmp when PREPARE_COMPUTATION,
                     o_address_tmp when READ_PIXEL,
                     o_address_tmp when WRITE_PIXEL,
-                    "XXXXXXXXXXXXXXXX" when others;
+                    "0000000000000000" when others;
     
     -- |PHASE 1|
     -- register r1
@@ -316,33 +312,33 @@ begin
     end process;
     
     -- |PHASE 3|
+    muxSL_in <= std_logic_vector(unsigned(rMax_out) - unsigned(rMin_out) + "00000001");
+
     -- input mux SL
-    process(rMax_out, rMin_out, rSL_out)
+    process(muxSL_in)
     begin
-        muxSL_in <= std_logic_vector(unsigned(rMax_out) - unsigned(rMin_out) + "00000001");
-        
-        if ((muxSL_in and std_logic_vector(unsigned(shift_right("10000000", to_integer(unsigned(rSL_out) - unsigned("0001")))))) = "00000000") then
-            SL_end <= '0';
-        elsif ((muxSL_in and shift_right("10000000", to_integer(unsigned(rSL_out))-1)) \= "00000000") then
---        if(muxSL_in(TO_INTEGER(unsigned(rSL_out))) = '0') then
-            SL_end <= '1';
+        if(muxSL_in = "00000000") then
+            rSL_in <= "0000";
+        elsif(muxSL_in >= "10000000") then
+            rSL_in <= "0001";
+        elsif(muxSL_in >= "01000000") then
+            rSL_in <= "0010";
+        elsif(muxSL_in >= "00100000") then
+            rSL_in <= "0011";  
+        elsif(muxSL_in >= "00010000") then
+            rSL_in <= "0100";    
+        elsif(muxSL_in >= "00001000") then
+            rSL_in <= "0101";
+        elsif(muxSL_in >= "00000100") then
+            rSL_in <= "0110";
+        elsif(muxSL_in >= "00000010") then
+            rSL_in <= "0111"; 
+        elsif(muxSL_in >= "00000001") then
+            rSL_in <= "1000";
         else
-            SL_end <= 'X';
+            rSL_in <= "XXXX";
         end if;
     end process;
-    
-    -- mux load rSL
-    with phase2_sel select
-        rSL_load <= not(SL_end) when "00",
-                '0' when "01",
-                '1' when "10",
-                'X' when others;
-    
-    -- mux before rSL
-    with rSL_sel select
-        rSL_in <= "0000" when '0',
-                std_logic_vector(unsigned(rSL_out) + "0001") when '1',
-                "XXXX" when others;
     
     -- register rSL
     process(i_clk, i_rst)
@@ -357,23 +353,12 @@ begin
     end process;
     
     -- |PHASE 4|
-    -- register r3
-    process(i_clk, i_rst)
-    begin
-        if(i_rst = '1') then
-            r3_out <= "00000000";
-        elsif (i_clk'event and i_clk = '1') then
-            if(phase3_sel = '1') then
-                r3_out <= i_data;
-            end if;
-        end if;
-    end process;
+    -- signal pixel_new
+    pixel_new <= std_logic_vector(("000000000" + (unsigned(i_data) - unsigned(rMin_out)) sll to_integer(unsigned(rSL_out))));
     
     -- mux o_data
-    process(r3_out, rMin_out, rSL_out)
+    process(pixel_new)
     begin
-        pixel_new <= std_logic_vector("000000000" + shift_left(unsigned(r3_out) - unsigned(rMin_out), to_integer(unsigned(rSL_out))));
-    
         if(unsigned(pixel_new) > 255 ) then
             o_data <= "11111111";
         else
@@ -383,9 +368,12 @@ begin
     
     -- mux before rC3 (uguale a rC2)
     with rC3_sel select
-        rC3_in <= rN_out when '0',
+        rC3_in <= std_logic_vector(unsigned(rN_out) - "0000000000000001") when '0',
                 std_logic_vector(unsigned(rC3_out) - "0000000000000001") when '1',
                 "XXXXXXXXXXXXXXXX" when others;
+    
+    -- signal rC3_load
+    rC3_load <= (phase3_sel or not(rC3_sel));
     
     -- register rC3
     process(i_clk, i_rst)
@@ -415,14 +403,8 @@ begin
         end if;
     end process;
     
-    -- signal rC3_load
-    process(phase3_sel, rC3_out)
-    begin
-        rC3_load <= (phase3_sel or not(rC3_sel));
-    end process;
-    
     -- |FSM PROCESS|
-    process(cur_state, i_start, N_end, MaxMin_end, SL_end, computation_end)
+    process(cur_state, i_start, N_end, MaxMin_end, computation_end)
     begin
         next_state <= cur_state;
         case cur_state is
@@ -448,16 +430,11 @@ begin
                 
             when COMPUTE_MAXMIN =>
                 if MaxMin_end = '1' then
-                    next_state <= PREPARE_SL_PHASE;
+                    next_state <= COMPUTE_SL;
                 end if;
-            
-            when PREPARE_SL_PHASE =>  
-                next_state <= COMPUTE_SL;
                 
             when COMPUTE_SL =>
-                if SL_end = '1' then
-                    next_state <= PREPARE_COMPUTATION;
-                end if;
+                next_state <= PREPARE_COMPUTATION;
                 
             when PREPARE_COMPUTATION =>
                 next_state <= READ_PIXEL;
@@ -467,11 +444,14 @@ begin
                 
             when WRITE_PIXEL =>
                 if computation_end = '1' then
-                    next_state <= WAIT_BEGIN;
-                    o_done <= '1';
+                    next_state <= END_COMPUTATION;
                 else
                     next_state <= READ_PIXEL;
                 end if;
+            
+            when END_COMPUTATION =>
+                next_state <= WAIT_BEGIN;
+                o_done <= '1';
                 
         end case;  
     end process;
@@ -482,7 +462,6 @@ begin
         -- output
         o_en <= '0';
         o_we <= '0';
-        o_data <= "00000000";
         
         -- phase 1
         r1_load <= '0';
@@ -499,13 +478,10 @@ begin
         phase1_sel <= "01";
         
         -- phase 3
-        rSL_sel <= '0';
-        phase2_sel <= "01";
+        rSL_load <= '0';
         
         -- phase 4
-        r3_load <= '0';
         phase3_sel <= '0';
-        pixel_new <= "000000000";
         rC3_sel <= '0';
         
         -- signals handled by the FSM
@@ -554,17 +530,11 @@ begin
                 rMin_sel <= '1';
                 rMax_sel <= '1';
                 
-                phase2_sel <= "10";
                 rC2_sel <='1';
                 rC2_load <='1';
-            
-            when PREPARE_SL_PHASE =>
-                rSL_sel <= '0';
-                phase2_sel <= "10";
                 
             when COMPUTE_SL =>
-                rSL_sel <= '1';
-                phase2_sel <= "00";
+                rSL_load <= '1';
                 
             when PREPARE_COMPUTATION =>
                 rC3_sel <='0';
@@ -574,15 +544,17 @@ begin
                 o_we <= '0';
                 
                 rC3_sel <='1';
-                r3_load <='1';
                 phase3_sel <= '0';
                 
             when WRITE_PIXEL =>
                 o_en <= '1';
                 o_we <= '1';
                 
-                r3_load <='0';
+                rC3_sel <='1';
                 phase3_sel <= '1';
+            
+            when END_COMPUTATION =>
+            -- do the reset of all the circuit
            
         end case;  
     end process;

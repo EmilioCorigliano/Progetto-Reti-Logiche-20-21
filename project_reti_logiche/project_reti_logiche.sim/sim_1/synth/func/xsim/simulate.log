@@ -1,0 +1,5 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Failure: Simulation Ended! TEST PASSATO
+Time: 767700 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Testbench_example.vhd
+$finish called at time : 767700 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Testbench_example.vhd" Line 113

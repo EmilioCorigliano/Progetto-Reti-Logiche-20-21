@@ -14,34 +14,31 @@ def find_min_val(pixels):
 def find_sl(pixels):
 	return 8 - math.floor(math.log(max(pixels)-min(pixels)+1, 2))
 		
-C = 2;
-R = 3;
+C = 3;
+R = 4;
 N = C*R;
 
-pixels = [randrange(256) for i in range(N)];
+memory = [C]+[R]
 
-min_pixel = find_min_val(pixels);
-sl = find_sl(pixels);
 
-new_pixels = [equalize(pixel, min_pixel, sl) for pixel in pixels];
+if(N > 0):
+	pixels = [randrange(256) for i in range(N)];
+	min_pixel = find_min_val(pixels);
+	sl = find_sl(pixels);
+	new_pixels = [equalize(pixel, min_pixel, sl) for pixel in pixels];
+	memory = memory + pixels + new_pixels;
 
-memory = [C]+[R] + pixels + new_pixels;
+print([hex(x) for x in memory]);
 
-print(memory);
-
-model_ram_type = "({} => std_logic_vector(to_unsigned( {}  , 8)),\n\t\t\t\t\t\t";
-
-ram_type = ''.join([model_ram_type.format(i, memory[i]) for i in range(2+N)]) + "others => (others =>'0'));\n"
-
-#print( ram_type );
+model_ram_type = "{} => std_logic_vector(to_unsigned( {}, 8)),\n\t\t\t\t\t\t";
+ram_type = '(' + ''.join([model_ram_type.format(i, memory[i]) for i in range(2+N)]) + "others => (others =>'0'));\n"
 		
 model_asserts = "assert RAM({}) = std_logic_vector(to_unsigned( {} , 8)) report \"TEST FALLITO (WORKING ZONE). Expected  {}  found \" & integer'image(to_integer(unsigned(RAM({}))))  severity failure;\n\t"
-
 asserts = ''.join([model_asserts.format(i, memory[i], memory[i], i ) for i in range(2+N, len(memory))]);
 
-#print(asserts);
-
 testbanch = f"""
+-- {[hex(x) for x in memory]}
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -142,7 +139,7 @@ end process test;
 end projecttb;
 """
 
-f = open("Testbench.vhd", "a")
+f = open("Testbench-small.vhd", "w")
 f.write(testbanch)
 f.close()
 

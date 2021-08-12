@@ -66,7 +66,7 @@ component datapath is
     );
 end component;
 
--- registers and signals definition
+-- registers and signals definition (internal signals)
 signal r1_out : std_logic_vector (7 downto 0);
 signal rN_in : std_logic_vector (15 downto 0);
 signal rN_out : std_logic_vector (15 downto 0);
@@ -143,8 +143,7 @@ begin
     
     -- o_address
     with cur_state select
-        o_address <= "0000000000000000" when READ_COLUMNS,
-                    "0000000000000001" when READ_ROWS,
+        o_address <= "0000000000000001" when READ_COLUMNS,
                     o_address_tmp0 when PREPARE_MAXMIN_PHASE,
                     o_address_tmp0 when COMPUTE_MAXMIN,
                     o_address_tmp when PREPARE_COMPUTATION,
@@ -202,9 +201,9 @@ begin
     end process;
     
     -- signal N_end
-    process(rC1_out)
+    process(rC1_out, r1_out)
     begin
-        if(rC1_out = "00000000") then
+        if(rC1_out = "00000000" or r1_out = "00000000") then
             N_end <= '1';
         else
             N_end <= '0';
@@ -410,7 +409,6 @@ begin
         case cur_state is
             when WAIT_BEGIN =>
                 if i_start = '1' then
-                    o_done <= '0';
                     next_state <= READ_COLUMNS;
                 end if;
             
@@ -422,7 +420,11 @@ begin
                      
             when COMPUTE_N =>
                 if N_end = '1' then
-                    next_state <= PREPARE_MAXMIN_PHASE;
+                    if(unsigned(rN_out) /= 0) then
+                        next_state <= PREPARE_MAXMIN_PHASE;
+                    else
+                        next_state <= END_COMPUTATION;
+                    end if;
                 end if;
            
             when PREPARE_MAXMIN_PHASE =>  
@@ -450,8 +452,10 @@ begin
                 end if;
             
             when END_COMPUTATION =>
-                next_state <= WAIT_BEGIN;
-                o_done <= '1';
+                if(i_start = '0') then
+                    next_state <= WAIT_BEGIN;
+                end if;
+                
                 
         end case;  
     end process;
@@ -462,6 +466,7 @@ begin
         -- output
         o_en <= '0';
         o_we <= '0';
+        o_done <= '0';
         
         -- phase 1
         r1_load <= '0';
@@ -498,7 +503,6 @@ begin
             when READ_ROWS =>
                 r1_load <= '0';
                 rN_sel <= '1';
-                rN_load <= '1';
                 
                 rC1_sel <= '0';
                 rC1_load <= '1';
@@ -554,11 +558,14 @@ begin
                 phase3_sel <= '1';
             
             when END_COMPUTATION =>
-            -- do the reset of all the circuit
+                o_done <= '1';
            
         end case;  
     end process;
 end Behavioral;
 
 
--- maybe can be deleted tmp_done, PREPARE_COMPUTATION, aggiusta 0 per SL
+-- maybe can be deleted PREPARE_COMPUTATION, aggiusta 0 per SL, togli commenti inutili, aggiungi commenti utili
+
+-- PREPARE_COMPUTATION: potrebbe essere ottimizzato, ma per chiarezza si lascia uno stato aggiuntivo
+-- o_address: per semplicità i datapaths non hanno 

@@ -14,8 +14,8 @@ def find_min_val(pixels):
 def find_sl(pixels):
 	return 8 - math.floor(math.log(max(pixels)-min(pixels)+1, 2))
 		
-C = 3;
-R = 4;
+C = 128;
+R = 128;
 N = C*R;
 
 memory = [C]+[R]
@@ -29,6 +29,8 @@ if(N > 0):
 	memory = memory + pixels + new_pixels;
 
 print([hex(x) for x in memory]);
+
+print("dim = " + str(len(memory)))
 
 model_ram_type = "{} => std_logic_vector(to_unsigned( {}, 8)),\n\t\t\t\t\t\t";
 ram_type = '(' + ''.join([model_ram_type.format(i, memory[i]) for i in range(2+N)]) + "others => (others =>'0'));\n"
@@ -139,7 +141,7 @@ end process test;
 end projecttb;
 """
 
-f = open("Testbench-small.vhd", "w")
+f = open("Testbench-maxSize.vhd", "w")
 f.write(testbanch)
 f.close()
 

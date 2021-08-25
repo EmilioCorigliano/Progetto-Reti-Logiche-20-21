@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"project_tb_ms_func_synth.vhd" \
+"../../../../../../tests/Testbench-maxSize.vhd" \
+
+# Do not sort compile order
+nosort

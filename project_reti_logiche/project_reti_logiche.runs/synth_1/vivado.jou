@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Wed Aug 11 18:44:54 2021
-# Process ID: 9284
+# Start of session at: Tue Aug 24 23:56:52 2021
+# Process ID: 14556
 # Current directory: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.runs/synth_1
 # Command line: vivado.exe -log project_reti_logiche.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source project_reti_logiche.tcl
 # Log file: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.runs/synth_1/project_reti_logiche.vds

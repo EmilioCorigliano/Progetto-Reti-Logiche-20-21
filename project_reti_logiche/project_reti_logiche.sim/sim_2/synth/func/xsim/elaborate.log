@@ -1,6 +1,6 @@
 Vivado Simulator 2020.1
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb4_func_synth xil_defaultlib.project_tb4 -log elaborate.log 
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_ms_func_synth xil_defaultlib.project_tb_ms -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -104,5 +104,5 @@ Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="110100100010110
 Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1011010001001011")(0...]
 Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
 Compiling architecture structure of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
-Compiling architecture projecttb of entity xil_defaultlib.project_tb4
-Built simulation snapshot project_tb4_func_synth
+Compiling architecture projecttb of entity xil_defaultlib.project_tb_ms
+Built simulation snapshot project_tb_ms_func_synth

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.2)  12 AUG 2021 02:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.2)  25 AUG 2021 02:02
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -702,90 +702,116 @@ File: esempio-di-equalizzazione.png Graphic file (type png)
 <use esempio-di-equalizzazione.png>
 Package pdftex.def Info: esempio-di-equalizzazione.png used on input line 70.
 (pdftex.def)             Requested size: 341.43306pt x 164.71826pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 77.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 78.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 77.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 78.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 77.
+(Font)              <10.95> on input line 78.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./esempio-di-equalizzazio
 ne.png>]
-<datapaths/FSM.png, id=13, 1602.98875pt x 323.2075pt>
+Overfull \hbox (9.55722pt too wide) in paragraph at lines 80--81
+\OT1/cmr/m/n/10.95 deve nec-es-sari-a-mente es-sere prece-dente alla vera e pro
+-pria elab-o-razione dell'immagine
+ []
+
+[2] <datapaths/FSM.png, id=16, 1602.98875pt x 323.2075pt>
 File: datapaths/FSM.png Graphic file (type png)
- <use datapaths/FSM.png>
-Package pdftex.def Info: datapaths/FSM.png used on input line 90.
+
+<use datapaths/FSM.png>
+Package pdftex.def Info: datapaths/FSM.png used on input line 107.
 (pdftex.def)             Requested size: 426.79134pt x 86.04904pt.
 
-Overfull \hbox (8.53766pt too wide) in paragraph at lines 90--91
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 107--108
  [][] 
  []
 
-<datapaths/regN.png, id=15, 783.92876pt x 435.6275pt>
+<datapaths/regN.png, id=18, 783.92876pt x 435.6275pt>
 File: datapaths/regN.png Graphic file (type png)
  <use datapaths/regN.png>
-Package pdftex.def Info: datapaths/regN.png used on input line 99.
+Package pdftex.def Info: datapaths/regN.png used on input line 116.
 (pdftex.def)             Requested size: 341.43306pt x 189.73572pt.
 
-Overfull \hbox (7.06142pt too wide) in paragraph at lines 105--106
+Overfull \hbox (7.06142pt too wide) in paragraph at lines 122--123
 \OT1/cmr/m/n/10.95 Nella sec-onda fase si cer-cano il val-ore mas-simo ($\OML/c
 mm/m/it/10.95 MAX[]PV$\OT1/cmr/m/n/10.95 ) e il val-ore min-imo ($\OML/cmm/m/it
 /10.95 MIN[]PV$\OT1/cmr/m/n/10.95 ):
  []
 
-<datapaths/regMax_regMin.png, id=16, 1395.2125pt x 799.98875pt>
+[3 <./datapaths/FSM.png> <./datapaths/regN.png>]
+<datapaths/regMax_regMin.png, id=26, 1395.2125pt x 799.98875pt>
 File: datapaths/regMax_regMin.png Graphic file (type png)
 
 <use datapaths/regMax_regMin.png>
-Package pdftex.def Info: datapaths/regMax_regMin.png used on input line 109.
+Package pdftex.def Info: datapaths/regMax_regMin.png used on input line 126.
 (pdftex.def)             Requested size: 341.43306pt x 195.77313pt.
- [2 <./datapaths/FSM.png>]
+
+
+LaTeX Warning: Reference `lst:soglie' on page 4 undefined on input line 132.
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-Overfull \hbox (15.37083pt too wide) in paragraph at lines 119--120
+Overfull \hbox (15.37083pt too wide) in paragraph at lines 136--137
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<datapaths/regSL_final.png, id=23, 758.835pt x 162.6075pt>
+<datapaths/regSL_final.png, id=27, 758.835pt x 162.6075pt>
 File: datapaths/regSL_final.png Graphic file (type png)
 
 <use datapaths/regSL_final.png>
-Package pdftex.def Info: datapaths/regSL_final.png used on input line 124.
+Package pdftex.def Info: datapaths/regSL_final.png used on input line 141.
 (pdftex.def)             Requested size: 341.43306pt x 73.16525pt.
- [3 <./datapaths/regN.png> <./datapaths/regMax_regMin.png>] <datapaths/computat
-ion.png, id=30, 1686.3pt x 769.87625pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4 <./datapaths/regMax_regMin.png>]
+<datapaths/computation.png, id=33, 1686.3pt x 769.87625pt>
 File: datapaths/computation.png Graphic file (type png)
 
 <use datapaths/computation.png>
-Package pdftex.def Info: datapaths/computation.png used on input line 134.
+Package pdftex.def Info: datapaths/computation.png used on input line 151.
 (pdftex.def)             Requested size: 341.43306pt x 155.8756pt.
- [4 <./datapaths/regSL_final.png> <./datapaths/computation.png>] [5] (Report.au
-x) ) 
+ [5 <./datapaths/regSL_final.png> <./datapaths/computation.png>]
+Overfull \hbox (35.53226pt too wide) in paragraph at lines 166--167
+[]\OT1/cmr/m/n/10.95 valori im-mag-ine da 0 a 255: sol-lecita un al-tro cor-ner
+ case nel cal-colo dello $\OML/cmm/m/it/10.95 SHIFT[]LEVEL$ 
+ []
+
+[6] (Report.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6631 strings out of 493323
- 93592 string characters out of 3139067
- 180629 words of memory out of 3000000
- 10079 multiletter control sequences out of 15000+200000
+ 6633 strings out of 493323
+ 93612 string characters out of 3139067
+ 182663 words of memory out of 3000000
+ 10081 multiletter control sequences out of 15000+200000
  10958 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,11n,43p,730b,1233s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Report.pdf (5 pages, 402471 bytes).
+ 44i,11n,43p,757b,1235s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Report.pdf (6 pages, 407201 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

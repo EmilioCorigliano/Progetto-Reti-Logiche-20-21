@@ -6,10 +6,10 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
 
-entity project_tb is
-end project_tb;
+entity project_tb_bd is
+end project_tb_bd;
 
-architecture projecttb of project_tb is
+architecture projecttb of project_tb_bd is
 constant c_CLOCK_PERIOD         : time := 15 ns;
 signal   tb_done                : std_logic;
 signal   mem_address            : std_logic_vector (15 downto 0) := (others => '0');

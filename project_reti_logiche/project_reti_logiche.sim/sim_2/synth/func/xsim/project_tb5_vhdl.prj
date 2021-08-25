@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"project_tb5_func_synth.vhd" \
+"../../../../../../tests/Testbanch-moreImages_diffDim.vhd" \
+
+# Do not sort compile order
+nosort

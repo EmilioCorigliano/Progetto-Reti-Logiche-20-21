@@ -1,4 +1,4 @@
-----------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------
 -- University: Politecnico di Milano
 -- Student: Corigliano Emilio
 -- 
@@ -132,7 +132,7 @@ signal cur_state, next_state : States;
 
 begin   
     -- handling the reset and the changing of the state on the front of the clock
-    process(i_clk)
+    process(i_clk, i_rst)
     begin
         if(i_rst = '1') then
             cur_state <= WAIT_BEGIN;
@@ -403,7 +403,7 @@ begin
     end process;
     
     -- |FSM PROCESS|
-    process(cur_state, i_start, N_end, MaxMin_end, computation_end)
+    process(cur_state, i_start, N_end, rN_out, MaxMin_end, computation_end)
     begin
         next_state <= cur_state;
         case cur_state is

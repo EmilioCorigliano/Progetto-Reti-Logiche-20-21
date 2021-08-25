@@ -2,153 +2,143 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Tue Aug 10 01:52:41 2021
-# Process ID: 15544
+# Start of session at: Tue Aug 24 22:25:28 2021
+# Process ID: 4336
 # Current directory: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11816 C:\Users\emili\Documents\SCUOLA\POLITECNICO\3ANNO\Progetto_reti_logiche\Progetto-Reti-Logiche-20-21\project_reti_logiche\project_reti_logiche.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17112 C:\Users\emili\Documents\SCUOLA\POLITECNICO\3ANNO\Progetto_reti_logiche\Progetto-Reti-Logiche-20-21\project_reti_logiche\project_reti_logiche.xpr
 # Log file: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado.log
 # Journal file: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.xpr
 update_compile_order -fileset sources_1
-launch_simulation
+launch_simulation -simset [get_filesets sim_2 ]
 source project_tb.tcl
-current_wave_config {Untitled 1}
-add_wave {{/project_tb/UUT/o_address}} 
-current_wave_config {Untitled 1}
-add_wave {{/project_tb/UUT/i_data}} 
-current_wave_config {Untitled 1}
-add_wave {{/project_tb/UUT/o_data}} 
-current_wave_config {Untitled 1}
-add_wave {{/project_tb/UUT/rN_out}} 
-current_wave_config {Untitled 1}
-add_wave {{/project_tb/UUT/rMax_out}} 
-current_wave_config {Untitled 1}
-add_wave {{/project_tb/UUT/rMin_out}} 
-current_wave_config {Untitled 1}
-add_wave {{/project_tb/UUT/rSL_out}} 
-restart
-run all
-current_wave_config {Untitled 1}
-add_wave {{/project_tb/UUT/cur_state}} 
-current_wave_config {Untitled 1}
-add_wave {{/project_tb/UUT/N_end}} 
-current_wave_config {Untitled 1}
-add_wave {{/project_tb/UUT/MaxMin_end}} 
-current_wave_config {Untitled 1}
-add_wave {{/project_tb/UUT/computation_end}} 
-restart
-run all
-relaunch_sim
-restart
-run all
-current_wave_config {Untitled 1}
-add_wave {{/project_tb/UUT/r1_out}} 
-current_wave_config {Untitled 1}
-add_wave {{/project_tb/UUT/r1_load}} 
-current_wave_config {Untitled 1}
-add_wave {{/project_tb/UUT/rN_in}} 
-restart
-run all
+run 100 us
+run 100 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top project_tb3 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_2
+launch_simulation -simset [get_filesets sim_2 ]
 close_sim
-launch_simulation
-source project_tb.tcl
-current_wave_config {Untitled 2}
-add_wave {{/project_tb/UUT/o_address}} 
-current_wave_config {Untitled 2}
-add_wave {{/project_tb/UUT/i_data}} 
-current_wave_config {Untitled 2}
-add_wave {{/project_tb/UUT/cur_state}} 
-current_wave_config {Untitled 2}
-add_wave {{/project_tb/UUT/r1_out}} 
-current_wave_config {Untitled 2}
-add_wave {{/project_tb/UUT/r1_load}} 
-current_wave_config {Untitled 2}
-add_wave {{/project_tb/UUT/rN_sel}} 
-current_wave_config {Untitled 2}
-add_wave {{/project_tb/UUT/rN_load}} 
-restart
-run all
-restart
-run all
-restart
-run all
-restart
-save_wave_config {C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_tb_behav.wcfg}
+launch_simulation -simset [get_filesets sim_2 ]
+source project_tb3.tcl
+run 100 us
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+add_files -fileset sim_2 -norecurse C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example1.vhd
+update_compile_order -fileset sim_2
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top project_tb_e1 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_2
+launch_simulation -simset [get_filesets sim_2 ]
 close_sim
-launch_simulation
-source project_tb.tcl
-current_wave_config {Untitled 3}
-add_wave {{/project_tb/UUT/i_data}} 
-current_wave_config {Untitled 3}
-add_wave {{/project_tb/UUT/o_address}} 
-current_wave_config {Untitled 3}
-add_wave {{/project_tb/UUT/o_en}} 
-current_wave_config {Untitled 3}
-add_wave {{/project_tb/UUT/r1_out}} 
-current_wave_config {Untitled 3}
-add_wave {{/project_tb/UUT/rN_in}} 
-current_wave_config {Untitled 3}
-add_wave {{/project_tb/UUT/rN_out}} 
-current_wave_config {Untitled 3}
-add_wave {{/project_tb/UUT/r1_load}} 
-current_wave_config {Untitled 3}
-add_wave {{/project_tb/UUT/rN_load}} 
-current_wave_config {Untitled 3}
-add_wave {{/project_tb/UUT/rN_sel}} 
-current_wave_config {Untitled 3}
-add_wave {{/project_tb/UUT/cur_state}} 
-restart
-run all
-relaunch_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source project_tb_e1.tcl
+run 100 us
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+add_files -fileset sim_2 -norecurse {C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example2.vhd C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example3.vhd C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example4.vhd C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example5.vhd}
+update_compile_order -fileset sim_2
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top project_tb_e2 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_2
 close_sim
-launch_simulation
-source project_tb.tcl
-current_wave_config {Untitled 4}
-add_wave {{/project_tb/UUT/cur_state}} 
-current_wave_config {Untitled 4}
-add_wave {{/project_tb/UUT/rN_out}} 
-current_wave_config {Untitled 4}
-add_wave {{/project_tb/UUT/rMax_out}} 
-current_wave_config {Untitled 4}
-add_wave {{/project_tb/UUT/rMin_out}} 
-current_wave_config {Untitled 4}
-add_wave {{/project_tb/UUT/rSL_out}} 
-restart
-current_wave_config {Untitled 4}
-add_wave {{/project_tb/UUT/i_data}} 
-current_wave_config {Untitled 4}
-add_wave {{/project_tb/UUT/o_done}} 
-current_wave_config {Untitled 4}
-add_wave {{/project_tb/UUT/o_data}} 
-restart
-run all
-restart
-run all
+launch_simulation -simset [get_filesets sim_2 ]
+source project_tb_e2.tcl
+run 100 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top project_tb_e3 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_2
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source project_tb_e3.tcl
+run 200 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top project_tb_e4 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_2
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source project_tb_e4.tcl
+run 200 us
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top project_tb_e5 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_2
+launch_simulation -simset [get_filesets sim_2 ]
+source project_tb_e5.tcl
+run 200 us
+update_compile_order -fileset sim_2
+update_compile_order -fileset sim_2
 relaunch_sim
-restart
-run all
-current_wave_config {Untitled 4}
-add_wave {{/project_tb/UUT/o_address}} 
-current_wave_config {Untitled 4}
-add_wave {{/project_tb/UUT/MaxMin_end}} 
-current_wave_config {Untitled 4}
-add_wave {{/project_tb/UUT/rC2_load}} 
-current_wave_config {Untitled 4}
-add_wave {{/project_tb/UUT/rC2_sel}} 
-current_wave_config {Untitled 4}
-add_wave {{/project_tb/UUT/rC2_in}} 
-current_wave_config {Untitled 4}
-add_wave {{/project_tb/UUT/rC2_out}} 
-restart
-run all
-current_wave_config {Untitled 4}
-add_wave {{/project_tb/UUT/r2_out}} 
-restart
-run all
-relaunch_sim
-restart
-run all
-relaunch_sim
+run 200 us
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+add_files -fileset sim_2 -norecurse C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-one_value.vhd
+update_compile_order -fileset sim_2
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top project_tb_ov [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_2
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source project_tb_ov.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+report_timing
+open report_timing
+report_timing
+report_utilization
+report_utilization
+open_run synth_1 -name synth_1
+report_timing
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top project_tb1 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_2
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top project_tb_ov [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_2
+launch_simulation -simset [get_filesets sim_2 ] -mode post-synthesis -type functional
+source project_tb_ov.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top project_tb1 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_2
+launch_simulation -simset [get_filesets sim_2 ] -mode post-synthesis -type functional
 close_sim

@@ -2,10 +2,10 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Tue Aug 24 22:25:28 2021
-# Process ID: 4336
+# Start of session at: Wed Aug 25 11:54:40 2021
+# Process ID: 6860
 # Current directory: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17112 C:\Users\emili\Documents\SCUOLA\POLITECNICO\3ANNO\Progetto_reti_logiche\Progetto-Reti-Logiche-20-21\project_reti_logiche\project_reti_logiche.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11972 C:\Users\emili\Documents\SCUOLA\POLITECNICO\3ANNO\Progetto_reti_logiche\Progetto-Reti-Logiche-20-21\project_reti_logiche\project_reti_logiche.xpr
 # Log file: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado.log
 # Journal file: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche\vivado.jou
 #-----------------------------------------------------------
@@ -18,27 +18,27 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/2020.1/data/ip'.
-open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 1023.820 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:14 . Memory (MB): peak = 1035.137 ; gain = 0.000
 update_compile_order -fileset sources_1
 launch_simulation -simset [get_filesets sim_2 ]
 Command: launch_simulation -simset sim_2
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_2'
-INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_2'...
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_ms' in fileset 'sim_2'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xvhdl --incr --relax -prj project_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
-INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+"xvhdl --incr --relax -prj project_tb_ms_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-maxSize.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb_ms'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_ms_behav xil_defaultlib.project_tb_ms -log elaborate.log"
 Vivado Simulator 2020.1
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_ms_behav xil_defaultlib.project_tb_ms -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -52,28 +52,27 @@ Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
 Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
-Compiling architecture projecttb of entity xil_defaultlib.project_tb
-Built simulation snapshot project_tb_behav
+Compiling architecture projecttb of entity xil_defaultlib.project_tb_ms
+Built simulation snapshot project_tb_ms_behav
 
 ****** Webtalk v2020.1 (64-bit)
   **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
   **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
-source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 22:29:22 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 96.191 ; gain = 0.000
-INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 22:29:22 2021...
-run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:35 . Memory (MB): peak = 1023.820 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '36' seconds
+source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_ms_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_ms_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Aug 25 12:05:05 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Aug 25 12:05:05 2021...
+run_program: Time (s): cpu = 00:00:12 ; elapsed = 00:03:18 . Memory (MB): peak = 1035.137 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '198' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "project_tb_behav -key {Behavioral:sim_2:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}"
+   with args "project_tb_ms_behav -key {Behavioral:sim_2:Functional:project_tb_ms} -tclbatch {project_tb_ms.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2020.1
 Time resolution is 1 ps
-source project_tb.tcl
+source project_tb_ms.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -83,26 +82,25 @@ source project_tb.tcl
 #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
 #   }
 # }
-WARNING: [Wavedata 42-489] Can't add object "/project_tb/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/project_tb_ms/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
 # run 1000ns
-xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1023.820 ; gain = 0.000
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded.
+xsim: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 1035.137 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_ms_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:46 . Memory (MB): peak = 1023.820 ; gain = 0.000
-run 100 us
-run 100 us
+launch_simulation: Time (s): cpu = 00:00:31 ; elapsed = 00:03:34 . Memory (MB): peak = 1035.137 ; gain = 0.000
+run 200 us
+run 200 us
+run 200 us
+run 200 us
 Failure: Simulation Ended! TEST PASSATO
-Time: 192977500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-bigData.vhd
-$finish called at time : 192977500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-bigData.vhd" Line 8585
+Time: 739772500 ps  Iteration: 0  Process: /project_tb_ms/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-maxSize.vhd
+$finish called at time : 739772500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-maxSize.vhd" Line 32869
 set_property top project_tb3 [get_filesets sim_2]
 set_property top_lib xil_defaultlib [get_filesets sim_2]
 update_compile_order -fileset sim_2
-launch_simulation -simset [get_filesets sim_2 ]
-Command: launch_simulation -simset sim_2
-boost::filesystem::remove: Impossibile accedere al file. Il file è utilizzato da un altro processo: "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/simulate.log"
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
-close_sim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1023.820 ; gain = 0.000
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1228.660 ; gain = 0.000
 launch_simulation -simset [get_filesets sim_2 ]
 Command: launch_simulation -simset sim_2
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
@@ -113,6 +111,8 @@ INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
 "xvhdl --incr --relax -prj project_tb3_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
 INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
@@ -135,17 +135,7 @@ Compiling package ieee.std_logic_unsigned
 Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
 Compiling architecture projecttb of entity xil_defaultlib.project_tb3
 Built simulation snapshot project_tb3_behav
-
-****** Webtalk v2020.1 (64-bit)
-  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
-  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb3_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb3_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 22:34:09 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 22:34:09 2021...
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1023.820 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -167,486 +157,84 @@ WARNING: [Wavedata 42-489] Can't add object "/project_tb3/RAM" to the wave windo
 WARNING: [Wavedata 42-489] Can't add object "/project_tb3/RAM1" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
 WARNING: [Wavedata 42-489] Can't add object "/project_tb3/RAM2" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
 # run 1000ns
-xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1023.820 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1228.660 ; gain = 0.000
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb3_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1023.820 ; gain = 0.000
-run 100 us
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1228.660 ; gain = 0.000
+run 200 us
 Failure: Simulation Ended! TEST PASSATO
 Time: 1862500 ps  Iteration: 0  Process: /project_tb3/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbanch-moreImages.vhd
 $finish called at time : 1862500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbanch-moreImages.vhd" Line 174
-set_property SOURCE_SET sources_1 [get_filesets sim_2]
-add_files -fileset sim_2 -norecurse C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example1.vhd
-update_compile_order -fileset sim_2
-set_property top project_tb_e1 [get_filesets sim_2]
-set_property top_lib xil_defaultlib [get_filesets sim_2]
-update_compile_order -fileset sim_2
-launch_simulation -simset [get_filesets sim_2 ]
-Command: launch_simulation -simset sim_2
-boost::filesystem::remove: Impossibile accedere al file. Il file è utilizzato da un altro processo: "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/simulate.log"
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1075.707 ; gain = 0.000
-launch_simulation -simset [get_filesets sim_2 ]
-Command: launch_simulation -simset sim_2
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_2'
-INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_e1' in fileset 'sim_2'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xvhdl --incr --relax -prj project_tb_e1_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example1.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'project_tb_e1'
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e1_behav xil_defaultlib.project_tb_e1 -log elaborate.log"
-Vivado Simulator 2020.1
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e1_behav xil_defaultlib.project_tb_e1 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
-Compiling architecture projecttb of entity xil_defaultlib.project_tb_e1
-Built simulation snapshot project_tb_e1_behav
-
-****** Webtalk v2020.1 (64-bit)
-  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
-  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e1_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e1_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 23:04:18 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 23:04:18 2021...
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1075.707 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "project_tb_e1_behav -key {Behavioral:sim_2:Functional:project_tb_e1} -tclbatch {project_tb_e1.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2020.1
-Time resolution is 1 ps
-source project_tb_e1.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-WARNING: [Wavedata 42-489] Can't add object "/project_tb_e1/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_e1_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1075.707 ; gain = 0.000
-run 100 us
-Failure: Simulation Ended! TEST PASSATO
-Time: 1157500 ps  Iteration: 0  Process: /project_tb_e1/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example1.vhd
-$finish called at time : 1157500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example1.vhd" Line 125
-set_property SOURCE_SET sources_1 [get_filesets sim_2]
-add_files -fileset sim_2 -norecurse {C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example2.vhd C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example3.vhd C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example4.vhd C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example5.vhd}
-update_compile_order -fileset sim_2
-set_property top project_tb_e2 [get_filesets sim_2]
-set_property top_lib xil_defaultlib [get_filesets sim_2]
-update_compile_order -fileset sim_2
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1159.535 ; gain = 77.652
-launch_simulation -simset [get_filesets sim_2 ]
-Command: launch_simulation -simset sim_2
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_2'
-INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_e2' in fileset 'sim_2'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xvhdl --incr --relax -prj project_tb_e2_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'project_tb_e2'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e2_behav xil_defaultlib.project_tb_e2 -log elaborate.log"
-Vivado Simulator 2020.1
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e2_behav xil_defaultlib.project_tb_e2 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
-Compiling architecture projecttb of entity xil_defaultlib.project_tb_e2
-Built simulation snapshot project_tb_e2_behav
-
-****** Webtalk v2020.1 (64-bit)
-  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
-  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e2_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e2_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 23:26:39 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 113.730 ; gain = 17.641
-INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 23:26:39 2021...
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1159.535 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "project_tb_e2_behav -key {Behavioral:sim_2:Functional:project_tb_e2} -tclbatch {project_tb_e2.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2020.1
-Time resolution is 1 ps
-source project_tb_e2.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-WARNING: [Wavedata 42-489] Can't add object "/project_tb_e2/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_e2_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1159.773 ; gain = 0.238
-run 100 us
-Failure: Simulation Ended! TEST PASSATO
-Time: 1157500 ps  Iteration: 0  Process: /project_tb_e2/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example2.vhd
-$finish called at time : 1157500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example2.vhd" Line 125
-set_property top project_tb_e3 [get_filesets sim_2]
-set_property top_lib xil_defaultlib [get_filesets sim_2]
-update_compile_order -fileset sim_2
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1214.863 ; gain = 0.000
-launch_simulation -simset [get_filesets sim_2 ]
-Command: launch_simulation -simset sim_2
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_2'
-INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_e3' in fileset 'sim_2'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xvhdl --incr --relax -prj project_tb_e3_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'project_tb_e3'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e3_behav xil_defaultlib.project_tb_e3 -log elaborate.log"
-Vivado Simulator 2020.1
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e3_behav xil_defaultlib.project_tb_e3 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
-Compiling architecture projecttb of entity xil_defaultlib.project_tb_e3
-Built simulation snapshot project_tb_e3_behav
-
-****** Webtalk v2020.1 (64-bit)
-  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
-  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e3_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e3_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 23:28:01 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 113.738 ; gain = 17.570
-INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 23:28:01 2021...
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1214.863 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "project_tb_e3_behav -key {Behavioral:sim_2:Functional:project_tb_e3} -tclbatch {project_tb_e3.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2020.1
-Time resolution is 1 ps
-source project_tb_e3.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-WARNING: [Wavedata 42-489] Can't add object "/project_tb_e3/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_e3_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1214.863 ; gain = 0.000
-run 200 us
-Failure: Simulation Ended! TEST PASSATO
-Time: 1157500 ps  Iteration: 0  Process: /project_tb_e3/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example3.vhd
-$finish called at time : 1157500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example3.vhd" Line 125
-set_property top project_tb_e4 [get_filesets sim_2]
-set_property top_lib xil_defaultlib [get_filesets sim_2]
-update_compile_order -fileset sim_2
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1225.949 ; gain = 11.086
-launch_simulation -simset [get_filesets sim_2 ]
-Command: launch_simulation -simset sim_2
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_2'
-INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_e4' in fileset 'sim_2'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xvhdl --incr --relax -prj project_tb_e4_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example4.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'project_tb_e4'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e4_behav xil_defaultlib.project_tb_e4 -log elaborate.log"
-Vivado Simulator 2020.1
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e4_behav xil_defaultlib.project_tb_e4 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
-Compiling architecture projecttb of entity xil_defaultlib.project_tb_e4
-Built simulation snapshot project_tb_e4_behav
-
-****** Webtalk v2020.1 (64-bit)
-  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
-  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e4_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e4_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 23:29:22 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 113.785 ; gain = 17.711
-INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 23:29:22 2021...
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1225.949 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "project_tb_e4_behav -key {Behavioral:sim_2:Functional:project_tb_e4} -tclbatch {project_tb_e4.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2020.1
-Time resolution is 1 ps
-source project_tb_e4.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-WARNING: [Wavedata 42-489] Can't add object "/project_tb_e4/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_e4_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1225.949 ; gain = 0.000
-run 200 us
-Failure: Simulation Ended! TEST PASSATO
-Time: 1157500 ps  Iteration: 0  Process: /project_tb_e4/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example4.vhd
-$finish called at time : 1157500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example4.vhd" Line 125
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1225.949 ; gain = 0.000
-set_property top project_tb_e5 [get_filesets sim_2]
-set_property top_lib xil_defaultlib [get_filesets sim_2]
-update_compile_order -fileset sim_2
-launch_simulation -simset [get_filesets sim_2 ]
-Command: launch_simulation -simset sim_2
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_2'
-INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_e5' in fileset 'sim_2'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xvhdl --incr --relax -prj project_tb_e5_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example5.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'project_tb_e5'
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e5_behav xil_defaultlib.project_tb_e5 -log elaborate.log"
-Vivado Simulator 2020.1
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e5_behav xil_defaultlib.project_tb_e5 -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
-Compiling architecture projecttb of entity xil_defaultlib.project_tb_e5
-Built simulation snapshot project_tb_e5_behav
-
-****** Webtalk v2020.1 (64-bit)
-  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
-  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e5_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e5_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 23:30:56 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 113.812 ; gain = 17.715
-INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 23:30:56 2021...
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1225.949 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "project_tb_e5_behav -key {Behavioral:sim_2:Functional:project_tb_e5} -tclbatch {project_tb_e5.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2020.1
-Time resolution is 1 ps
-source project_tb_e5.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-WARNING: [Wavedata 42-489] Can't add object "/project_tb_e5/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_e5_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1225.949 ; gain = 0.000
-run 200 us
-Failure: TEST FALLITO (WORKING ZONE). Expected  68  found 69
-Time: 1157500 ps  Iteration: 0  Process: /project_tb_e5/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example5.vhd
-$finish called at time : 1157500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example5.vhd" Line 114
-update_compile_order -fileset sim_2
-update_compile_order -fileset sim_2
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/project_tb3/UUT/i_data}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/project_tb3/UUT/o_address}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/project_tb3/UUT/o_data}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/project_tb3/UUT/o_we}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/project_tb3/UUT/o_en}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/project_tb3/UUT/cur_state}} 
 relaunch_sim
-suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1225.949 ; gain = 0.000
 Command: launch_simulation -simset sim_2 -mode behavioral
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_2'
-INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_e5' in fileset 'sim_2'...
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb3' in fileset 'sim_2'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xvhdl --incr --relax -prj project_tb_e5_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example5.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'project_tb_e5'
+"xvhdl --incr --relax -prj project_tb3_vhdl.prj"
 INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 Command: launch_simulation -simset sim_2 -mode behavioral
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e5_behav xil_defaultlib.project_tb_e5 -log elaborate.log"
+"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb3_behav xil_defaultlib.project_tb3 -log elaborate.log"
 Vivado Simulator 2020.1
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e5_behav xil_defaultlib.project_tb_e5 -log elaborate.log 
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb3_behav xil_defaultlib.project_tb3 -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
-Compiling architecture projecttb of entity xil_defaultlib.project_tb_e5
-Built simulation snapshot project_tb_e5_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
 Vivado Simulator 2020.1
 Time resolution is 1 ps
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1225.949 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1228.660 ; gain = 0.000
 run 200 us
 Failure: Simulation Ended! TEST PASSATO
-Time: 1157500 ps  Iteration: 0  Process: /project_tb_e5/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example5.vhd
-$finish called at time : 1157500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example5.vhd" Line 125
-set_property SOURCE_SET sources_1 [get_filesets sim_2]
-add_files -fileset sim_2 -norecurse C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-one_value.vhd
-update_compile_order -fileset sim_2
-set_property top project_tb_ov [get_filesets sim_2]
-set_property top_lib xil_defaultlib [get_filesets sim_2]
-update_compile_order -fileset sim_2
+Time: 1862500 ps  Iteration: 0  Process: /project_tb3/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbanch-moreImages.vhd
+$finish called at time : 1862500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbanch-moreImages.vhd" Line 174
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation -simset [get_filesets sim_2 ]
 Command: launch_simulation -simset sim_2
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_2'
-INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_ov' in fileset 'sim_2'...
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb3' in fileset 'sim_2'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xvhdl --incr --relax -prj project_tb_ov_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-one_value.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'project_tb_ov'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+"xvhdl --incr --relax -prj project_tb3_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
-"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_ov_behav xil_defaultlib.project_tb_ov -log elaborate.log"
+"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb3_behav xil_defaultlib.project_tb3 -log elaborate.log"
 Vivado Simulator 2020.1
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_ov_behav xil_defaultlib.project_tb_ov -log elaborate.log 
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb3_behav xil_defaultlib.project_tb3 -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -660,27 +248,17 @@ Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
 Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
-Compiling architecture projecttb of entity xil_defaultlib.project_tb_ov
-Built simulation snapshot project_tb_ov_behav
-
-****** Webtalk v2020.1 (64-bit)
-  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
-  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_ov_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_ov_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 23:56:12 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 23:56:12 2021...
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1225.949 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+Compiling architecture projecttb of entity xil_defaultlib.project_tb3
+Built simulation snapshot project_tb3_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "project_tb_ov_behav -key {Behavioral:sim_2:Functional:project_tb_ov} -tclbatch {project_tb_ov.tcl} -log {simulate.log}"
+   with args "project_tb3_behav -key {Behavioral:sim_2:Functional:project_tb3} -tclbatch {project_tb3.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2020.1
 Time resolution is 1 ps
-source project_tb_ov.tcl
+source project_tb3.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -690,36 +268,75 @@ source project_tb_ov.tcl
 #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
 #   }
 # }
-WARNING: [Wavedata 42-489] Can't add object "/project_tb_ov/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/project_tb3/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/project_tb3/RAM1" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/project_tb3/RAM2" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
 # run 1000ns
-Failure: Simulation Ended! TEST PASSATO
-Time: 632500 ps  Iteration: 0  Process: /project_tb_ov/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-one_value.vhd
-$finish called at time : 632500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-one_value.vhd" Line 103
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_ov_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb3_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1225.949 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1228.660 ; gain = 0.000
+run 200 us
+Failure: Simulation Ended! TEST PASSATO
+Time: 1817500 ps  Iteration: 0  Process: /project_tb3/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbanch-moreImages.vhd
+$finish called at time : 1817500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbanch-moreImages.vhd" Line 174
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/project_tb3/UUT/cur_state}} 
+relaunch_sim
+Command: launch_simulation -simset sim_2 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb3' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj project_tb3_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_2 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb3_behav xil_defaultlib.project_tb3 -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb3_behav xil_defaultlib.project_tb3 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1228.660 ; gain = 0.000
+run 200 us
+Failure: Simulation Ended! TEST PASSATO
+Time: 1817500 ps  Iteration: 0  Process: /project_tb3/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbanch-moreImages.vhd
+$finish called at time : 1817500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbanch-moreImages.vhd" Line 174
 reset_run synth_1
 WARNING: [Vivado 12-1017] Problems encountered:
 1. Failed to delete one or more files in run directory C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.runs/synth_1
 
 launch_runs synth_1 -jobs 2
-[Tue Aug 24 23:56:47 2021] Launched synth_1...
+[Wed Aug 25 12:43:26 2021] Launched synth_1...
 Run output will be captured here: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.runs/synth_1/runme.log
-report_timing
-ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
-open report_timing
-couldn't open "report_timing": no such file or directory
-report_timing
-ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
-report_utilization
-ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
-report_utilization
-ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
-open_run synth_1 -name synth_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Wed Aug 25 12:56:25 2021] Launched synth_1...
+Run output will be captured here: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_2 ] -mode post-synthesis -type functional
+Command: launch_simulation -simset sim_2 -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
 Design is defaulting to impl run constrset: constrs_1
 Design is defaulting to synth run part: xc7a200tfbg484-1
 INFO: [Device 21-403] Loading part xc7a200tfbg484-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1528.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1465.359 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2020.1
@@ -727,11 +344,337 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/clock.xdc]
 Finished Parsing XDC File [C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/clock.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1639.012 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1583.039 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-open_run: Time (s): cpu = 00:00:30 ; elapsed = 00:00:23 . Memory (MB): peak = 1768.898 ; gain = 542.949
+open_run: Time (s): cpu = 00:00:32 ; elapsed = 00:00:24 . Memory (MB): peak = 1672.012 ; gain = 443.352
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/project_tb3_func_synth.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/project_tb3_func_synth.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb3' in fileset 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim'
+"xvhdl --incr --relax -prj project_tb3_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/project_tb3_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim'
+"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb3_func_synth xil_defaultlib.project_tb3 -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb3_func_synth xil_defaultlib.project_tb3 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000001001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111111110")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011101000101011010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010101001101110000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101010111010101110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000001")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000010000...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111100000001011111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10001000100010001000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110001011111111")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01000000")(0,7)\]
+Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111101100001000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101111000")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001011001100110")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00001000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000010")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000100000000")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010111110101010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101110111011101111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11001100101010100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10100000101000000000...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111100111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000011001010")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000010000000100000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101111111011101110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110000101010100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101110111111001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000110000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000010111010101")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000010")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101110")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001111110010000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111101010011111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111010...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1011")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11011111")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101100")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00010000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01111111")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000000010101010100...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000011010000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001000000001001")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100000010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000100")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001000000100000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000111100000010")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111010101110111011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01010101010101010101...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001100101101001")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1011010001001011")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11111110")(0,7)\]
+Compiling architecture structure of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb3
+Built simulation snapshot project_tb3_func_synth
+run_program: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2186.332 ; gain = 414.676
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb3_func_synth -key {Post-Synthesis:sim_2:Functional:project_tb3} -tclbatch {project_tb3.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source project_tb3.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb3/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/project_tb3/RAM1" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/project_tb3/RAM2" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2422.629 ; gain = 235.203
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb3_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:01:13 ; elapsed = 00:00:53 . Memory (MB): peak = 2422.629 ; gain = 1193.969
+report_utilization
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Aug 25 13:01:00 2021
+| Host         : DESKTOP-PB3IH3G running 64-bit major release  (build 9200)
+| Command      : report_utilization
+| Design       : project_reti_logiche
+| Device       : 7a200tfbg484-1
+| Design State : Synthesized
+------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Memory
+3. DSP
+4. IO and GT Specific
+5. Clocking
+6. Specific Feature
+7. Primitives
+8. Black Boxes
+9. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++-------------------------+------+-------+-----------+-------+
+|        Site Type        | Used | Fixed | Available | Util% |
++-------------------------+------+-------+-----------+-------+
+| Slice LUTs*             |  183 |     0 |    134600 |  0.14 |
+|   LUT as Logic          |  183 |     0 |    134600 |  0.14 |
+|   LUT as Memory         |    0 |     0 |     46200 |  0.00 |
+| Slice Registers         |   88 |     0 |    269200 |  0.03 |
+|   Register as Flip Flop |   88 |     0 |    269200 |  0.03 |
+|   Register as Latch     |    0 |     0 |    269200 |  0.00 |
+| F7 Muxes                |    0 |     0 |     67300 |  0.00 |
+| F8 Muxes                |    0 |     0 |     33650 |  0.00 |
++-------------------------+------+-------+-----------+-------+
+* Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 0     |          Yes |           - |          Set |
+| 88    |          Yes |           - |        Reset |
+| 0     |          Yes |         Set |            - |
+| 0     |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Memory
+---------
+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| Block RAM Tile |    0 |     0 |       365 |  0.00 |
+|   RAMB36/FIFO* |    0 |     0 |       365 |  0.00 |
+|   RAMB18       |    0 |     0 |       730 |  0.00 |
++----------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+3. DSP
+------
+
++-----------+------+-------+-----------+-------+
+| Site Type | Used | Fixed | Available | Util% |
++-----------+------+-------+-----------+-------+
+| DSPs      |    0 |     0 |       740 |  0.00 |
++-----------+------+-------+-----------+-------+
+
+
+4. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+-----------+-------+
+|          Site Type          | Used | Fixed | Available | Util% |
++-----------------------------+------+-------+-----------+-------+
+| Bonded IOB                  |   38 |     0 |       285 | 13.33 |
+| Bonded IPADs                |    0 |     0 |        14 |  0.00 |
+| Bonded OPADs                |    0 |     0 |         8 |  0.00 |
+| PHY_CONTROL                 |    0 |     0 |        10 |  0.00 |
+| PHASER_REF                  |    0 |     0 |        10 |  0.00 |
+| OUT_FIFO                    |    0 |     0 |        40 |  0.00 |
+| IN_FIFO                     |    0 |     0 |        40 |  0.00 |
+| IDELAYCTRL                  |    0 |     0 |        10 |  0.00 |
+| IBUFDS                      |    0 |     0 |       274 |  0.00 |
+| GTPE2_CHANNEL               |    0 |     0 |         4 |  0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        40 |  0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        40 |  0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       500 |  0.00 |
+| IBUFDS_GTE2                 |    0 |     0 |         2 |  0.00 |
+| ILOGIC                      |    0 |     0 |       285 |  0.00 |
+| OLOGIC                      |    0 |     0 |       285 |  0.00 |
++-----------------------------+------+-------+-----------+-------+
+
+
+5. Clocking
+-----------
+
++------------+------+-------+-----------+-------+
+|  Site Type | Used | Fixed | Available | Util% |
++------------+------+-------+-----------+-------+
+| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
+| BUFIO      |    0 |     0 |        40 |  0.00 |
+| MMCME2_ADV |    0 |     0 |        10 |  0.00 |
+| PLLE2_ADV  |    0 |     0 |        10 |  0.00 |
+| BUFMRCE    |    0 |     0 |        20 |  0.00 |
+| BUFHCE     |    0 |     0 |       120 |  0.00 |
+| BUFR       |    0 |     0 |        40 |  0.00 |
++------------+------+-------+-----------+-------+
+
+
+6. Specific Feature
+-------------------
+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |         2 |  0.00 |
+| PCIE_2_1    |    0 |     0 |         1 |  0.00 |
+| STARTUPE2   |    0 |     0 |         1 |  0.00 |
+| XADC        |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
+
+
+7. Primitives
+-------------
+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+| FDCE     |   88 |        Flop & Latch |
+| LUT6     |   66 |                 LUT |
+| LUT4     |   65 |                 LUT |
+| LUT2     |   52 |                 LUT |
+| LUT3     |   44 |                 LUT |
+| CARRY4   |   32 |          CarryLogic |
+| OBUF     |   27 |                  IO |
+| IBUF     |   11 |                  IO |
+| LUT5     |    8 |                 LUT |
+| LUT1     |    3 |                 LUT |
+| BUFG     |    1 |               Clock |
++----------+------+---------------------+
+
+
+8. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+9. Instantiated Netlists
+------------------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+run 200 us
+Failure: Simulation Ended! TEST PASSATO
+Time: 1817600 ps  Iteration: 0  Process: /project_tb3/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbanch-moreImages.vhd
+$finish called at time : 1817600 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbanch-moreImages.vhd" Line 174
 report_timing
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
@@ -740,7 +683,7 @@ INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max 
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Wed Aug 25 00:06:47 2021
+| Date         : Wed Aug 25 13:08:21 2021
 | Host         : DESKTOP-PB3IH3G running 64-bit major release  (build 9200)
 | Command      : report_timing
 | Design       : project_reti_logiche
@@ -750,16 +693,16 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 Timing Report
 
-Slack (MET) :             5.433ns  (required time - arrival time)
-  Source:                 rC2_out_reg[3]/C
+Slack (MET) :             5.239ns  (required time - arrival time)
+  Source:                 rMin_out_reg[1]/C
                             (rising edge-triggered cell FDCE clocked by clock  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            FSM_sequential_cur_state_reg[0]/CE
+  Destination:            rSL_out_reg[0]/D
                             (rising edge-triggered cell FDCE clocked by clock  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clock
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (clock rise@10.000ns - clock rise@0.000ns)
-  Data Path Delay:        4.185ns  (logic 1.935ns (46.237%)  route 2.250ns (53.763%))
-  Logic Levels:           5  (CARRY4=2 LUT4=1 LUT6=2)
+  Data Path Delay:        4.610ns  (logic 1.980ns (42.950%)  route 2.630ns (57.050%))
+  Logic Levels:           6  (CARRY4=2 LUT3=2 LUT4=1 LUT6=1)
   Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    2.100ns = ( 12.100 - 10.000 ) 
     Source Clock Delay      (SCD):    2.424ns
@@ -779,23 +722,25 @@ Slack (MET) :             5.433ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.800     1.744    i_clk_IBUF
                          BUFG (Prop_bufg_I_O)         0.096     1.840 r  i_clk_IBUF_BUFG_inst/O
                          net (fo=88, unplaced)        0.584     2.424    i_clk_IBUF_BUFG
-                         FDCE                                         r  rC2_out_reg[3]/C
+                         FDCE                                         r  rMin_out_reg[1]/C
   -------------------------------------------------------------------    -------------------
-                         FDCE (Prop_fdce_C_Q)         0.456     2.880 r  rC2_out_reg[3]/Q
-                         net (fo=3, unplaced)         0.983     3.863    rC2_out_reg[3]
-                         LUT6 (Prop_lut6_I0_O)        0.295     4.158 r  FSM_sequential_cur_state[3]_i_17/O
-                         net (fo=1, unplaced)         0.000     4.158    FSM_sequential_cur_state[3]_i_17_n_0
-                         CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.550     4.708 r  FSM_sequential_cur_state_reg[3]_i_11/CO[3]
-                         net (fo=1, unplaced)         0.009     4.717    FSM_sequential_cur_state_reg[3]_i_11_n_0
-                         CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.178     4.895 r  FSM_sequential_cur_state_reg[3]_i_8/CO[1]
-                         net (fo=1, unplaced)         0.312     5.207    MaxMin_end
-                         LUT6 (Prop_lut6_I0_O)        0.332     5.539 r  FSM_sequential_cur_state[3]_i_4/O
-                         net (fo=1, unplaced)         0.449     5.988    FSM_sequential_cur_state[3]_i_4_n_0
-                         LUT4 (Prop_lut4_I3_O)        0.124     6.112 r  FSM_sequential_cur_state[3]_i_1/O
-                         net (fo=4, unplaced)         0.497     6.609    FSM_sequential_cur_state[3]_i_1_n_0
-                         FDCE                                         r  FSM_sequential_cur_state_reg[0]/CE
+                         FDCE (Prop_fdce_C_Q)         0.456     2.880 r  rMin_out_reg[1]/Q
+                         net (fo=7, unplaced)         0.776     3.656    rMin_out[1]
+                         LUT3 (Prop_lut3_I0_O)        0.295     3.951 r  rSL_out[3]_i_9/O
+                         net (fo=1, unplaced)         0.000     3.951    rSL_out[3]_i_9_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     4.349 r  rSL_out_reg[3]_i_4/CO[3]
+                         net (fo=1, unplaced)         0.009     4.358    rSL_out_reg[3]_i_4_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     4.614 r  rSL_out_reg[3]_i_5/O[2]
+                         net (fo=3, unplaced)         0.923     5.537    muxSL_in[6]
+                         LUT3 (Prop_lut3_I0_O)        0.327     5.864 r  rSL_out[3]_i_3/O
+                         net (fo=4, unplaced)         0.473     6.337    rSL_out[3]_i_3_n_0
+                         LUT6 (Prop_lut6_I5_O)        0.124     6.461 f  rSL_out[0]_i_3/O
+                         net (fo=1, unplaced)         0.449     6.910    rSL_in1
+                         LUT4 (Prop_lut4_I2_O)        0.124     7.034 r  rSL_out[0]_i_1/O
+                         net (fo=1, unplaced)         0.000     7.034    rSL_out[0]_i_1_n_0
+                         FDCE                                         r  rSL_out_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clock rise edge)     10.000    10.000 r  
@@ -805,296 +750,991 @@ Slack (MET) :             5.433ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.760    11.570    i_clk_IBUF
                          BUFG (Prop_bufg_I_O)         0.091    11.661 r  i_clk_IBUF_BUFG_inst/O
                          net (fo=88, unplaced)        0.439    12.100    i_clk_IBUF_BUFG
-                         FDCE                                         r  FSM_sequential_cur_state_reg[0]/C
+                         FDCE                                         r  rSL_out_reg[0]/C
                          clock pessimism              0.178    12.279    
                          clock uncertainty           -0.035    12.243    
-                         FDCE (Setup_fdce_C_CE)      -0.202    12.041    FSM_sequential_cur_state_reg[0]
+                         FDCE (Setup_fdce_C_D)        0.029    12.272    rSL_out_reg[0]
   -------------------------------------------------------------------
-                         required time                         12.041    
-                         arrival time                          -6.609    
+                         required time                         12.272    
+                         arrival time                          -7.034    
   -------------------------------------------------------------------
-                         slack                                  5.433    
+                         slack                                  5.239    
 
 
 
 
-set_property top project_tb1 [get_filesets sim_2]
-set_property top_lib xil_defaultlib [get_filesets sim_2]
-update_compile_order -fileset sim_2
-set_property top project_tb_ov [get_filesets sim_2]
-set_property top_lib xil_defaultlib [get_filesets sim_2]
-update_compile_order -fileset sim_2
-launch_simulation -simset [get_filesets sim_2 ] -mode post-synthesis -type functional
-Command: launch_simulation -simset sim_2 -mode post-synthesis -type functional
-INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_2'
-INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
-INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/project_tb_ov_func_synth.vhd"
-INFO: [SIM-utils-36] Netlist generated:C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/project_tb_ov_func_synth.vhd
-INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_ov' in fileset 'sim_2'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim'
-"xvhdl --incr --relax -prj project_tb_ov_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/project_tb_ov_func_synth.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-one_value.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'project_tb_ov'
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim'
-"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_ov_func_synth xil_defaultlib.project_tb_ov -log elaborate.log"
-Vivado Simulator 2020.1
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_ov_func_synth xil_defaultlib.project_tb_ov -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package unisim.vcomponents
-Compiling package ieee.vital_timing
-Compiling package ieee.vital_primitives
-Compiling package unisim.vpkg
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000000010111111")(0...]
-Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111110000...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11110100111101000100...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111111110")(0...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
-Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010100000100000101...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111110000000")(0...]
-Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
-Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101010111011101010...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000100010001000100...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111010...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000001")(0...]
-Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
-Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
-Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
-Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
-Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000001010...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000100111101000100...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101111000")(0...]
-Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111011111101111")(0...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110111111111111")(0...]
-Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11111011")(0,7)\]
-Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
-Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
-Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
-Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101111111011101111...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000110000...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111011111111")(0...]
-Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111010...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000001010...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000010000000110000...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101110111011101110...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000011000000000000...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110111111101")(0...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11110000111111111111...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000010101010011...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011001000000010")(0...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000100010001...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000010000")(0...]
-Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01110100")(0,7)\]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001111110010000")(0...]
-Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11100001111111111110...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110000000011111...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110111101100000")(0...]
-Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011010111111111001...]
-Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00010000")(0,7)\]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010100110101111...]
-Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
-Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00001000")(0,7)\]
-Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101100")(0,7)\]
-Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
-Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000100")(0,7)\]
-Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101111")(0,7)\]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101000101011101")(0...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000010011110111")(0...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000011010000")(0...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001000000001001")(0...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100000010")(0...]
-Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1011")(0,3)\]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100000011110100")(0...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000010")(0...]
-Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000001100000...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000001000")(0...]
-Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000001000000000000...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000001000000000")(0...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111001100111111...]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111011101110111010...]
-Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000001")(0,7)\]
-Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000100010001010100...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000100000000")(0...]
-Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01000000")(0,7)\]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1101001000101101")(0...]
-Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1011010001001011")(0...]
-Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
-Compiling architecture structure of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
-Compiling architecture projecttb of entity xil_defaultlib.project_tb_ov
-Built simulation snapshot project_tb_ov_func_synth
+report_timing -sort_by
+ERROR: [Common 17-157] Error parsing command line options, please type 'report_timing -help' for usage info.
+report_timing -help
+report_timing
 
-****** Webtalk v2020.1 (64-bit)
-  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
-  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+Description: 
+Report timing paths
 
-source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/xsim.dir/project_tb_ov_func_synth/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/xsim.dir/project_tb_ov_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Aug 25 00:09:21 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Wed Aug 25 00:09:21 2021...
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 2346.348 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "project_tb_ov_func_synth -key {Post-Synthesis:sim_2:Functional:project_tb_ov} -tclbatch {project_tb_ov.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2020.1
-Time resolution is 1 ps
-source project_tb_ov.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-WARNING: [Wavedata 42-489] Can't add object "/project_tb_ov/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
-# run 1000ns
-Failure: Simulation Ended! TEST PASSATO
-Time: 632600 ps  Iteration: 0  Process: /project_tb_ov/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-one_value.vhd
-$finish called at time : 632600 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-one_value.vhd" Line 103
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_ov_func_synth' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:30 . Memory (MB): peak = 2346.348 ; gain = 14.199
-set_property top project_tb1 [get_filesets sim_2]
-set_property top_lib xil_defaultlib [get_filesets sim_2]
-update_compile_order -fileset sim_2
-launch_simulation -simset [get_filesets sim_2 ] -mode post-synthesis -type functional
-Command: launch_simulation -simset sim_2 -mode post-synthesis -type functional
-boost::filesystem::remove: Impossibile accedere al file. Il file è utilizzato da un altro processo: "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/simulate.log"
+Syntax: 
+report_timing  [-from <args>] [-rise_from <args>] [-fall_from <args>]
+               [-to <args>] [-rise_to <args>] [-fall_to <args>]
+               [-through <args>] [-rise_through <args>] [-fall_through <args>]
+               [-delay_type <arg>] [-setup] [-hold] [-max_paths <arg>]
+               [-nworst <arg>] [-unique_pins] [-path_type <arg>] [-input_pins]
+               [-no_header] [-no_reused_label] [-slack_lesser_than <arg>]
+               [-slack_greater_than <arg>] [-group <args>] [-sort_by <arg>]
+               [-no_report_unconstrained] [-user_ignored] [-of_objects <args>]
+               [-significant_digits <arg>] [-column_style <arg>] [-file <arg>]
+               [-append] [-name <arg>] [-no_pr_attribute] [-routable_nets]
+               [-return_string] [-warn_on_violation] [-cells <args>]
+               [-rpx <arg>] [-quiet] [-verbose]
+
+Usage: 
+  Name                        Description
+  ---------------------------------------
+  [-from]                     From pins, ports, cells or clocks
+  [-rise_from]                Rising from pins, ports, cells or clocks
+  [-fall_from]                Falling from pins, ports, cells  or clocks
+  [-to]                       To pins, ports, cells or clocks
+  [-rise_to]                  Rising to pins, ports, cells or clocks
+  [-fall_to]                  Falling to pins, ports, cells or clocks
+  [-through]                  Through pins, ports, cells or nets
+  [-rise_through]             Rising through pins, ports, cells or nets
+  [-fall_through]             Falling through pins, ports, cells or nets
+  [-delay_type]               Type of path delay: Values: max, min, min_max, 
+                              max_rise, max_fall, min_rise, min_fall
+                              Default: max
+  [-setup]                    Report max delay timing paths (equivalent to 
+                              -delay_type max)
+  [-hold]                     Report min delay timing paths (equivalent to 
+                              -delay_type min)
+  [-max_paths]                Maximum number of paths to output when sorted 
+                              by slack, or per path group when sorted by 
+                              group: Value >=1
+                              Default: 1
+  [-nworst]                   List up to N worst paths to endpoint: Value >=1
+                              Default: 1
+  [-unique_pins]              for each unique set of pins, show at most 1 
+                              path per path group
+  [-path_type]                Format for path report: Values: end, summary, 
+                              short, full, full_clock, full_clock_expanded
+                              Default: full_clock_expanded
+  [-input_pins]               Show input pins in path
+  [-no_header]                Do not generate a report header
+  [-no_reused_label]          Do not label reuse status on pins in the report
+  [-slack_lesser_than]        Display paths with slack less than this
+                              Default: 1e+30
+  [-slack_greater_than]       Display paths with slack greater than this
+                              Default: -1e+30
+  [-group]                    Limit report to paths in this group(s)
+  [-sort_by]                  Sorting order of paths: Values: group, slack
+                              Default: slack
+  [-no_report_unconstrained]  Do not report infinite slack paths
+  [-user_ignored]             Only report paths which have infinite slack 
+                              because of set_false_path or set_clock_groups 
+                              timing constraints
+  [-of_objects]               Report timing for these paths
+  [-significant_digits]       Number of digits to display: Range: 0 to 3
+                              Default: 3
+  [-column_style]             style for path report columns: Values: 
+                              variable_width, anchor_left, fixed_width
+                              Default: anchor_left
+  [-file]                     Filename to output results to. (send output to 
+                              console if -file is not used)
+  [-append]                   Append the results to file, don't overwrite the
+                              results file
+  [-name]                     Output the results to GUI panel with this name
+  [-no_pr_attribute]          for Dynamic Function eXchange designs, do not 
+                              report whether netlist resources are in the 
+                              static or reconfigurable regions
+  [-routable_nets]            store the number of routable nets traversed as 
+                              a property on timing paths.
+  [-return_string]            return report as string
+  [-warn_on_violation]        issue a critical warning when the report 
+                              contains a timing violation
+  [-cells]                    run report_timing on the specified cell(s)
+  [-rpx]                      Filename to output interactive results to.
+  [-quiet]                    Ignore command errors
+  [-verbose]                  Suspend message limits during command execution
+
+Categories: 
+Report, Timing
+
+Description:
+
+  Note: If the design has no timing constraints, report_timing reports on
+  unconstrained paths in the design. However, if even one path has timing
+  constraints then report_timing only reports on the constrained paths in the
+  design, unless unconstrained timing paths are specified by the -from/-to
+  options.
+
+  This command performs timing analysis on the specified timing paths of the
+  current Synthesized or Implemented Design. By default the tool reports the
+  timing path with the worst calculated slack within each path group.
+  However, you can optionally increase the number of paths and delays
+  reported with the use of the -nworst or -max_paths arguments.
+
+  Note: The report_timing can be multi-threaded to speed the process. Refer
+  to the set_param command for more information on setting the
+  general.maxThreads parameter.
+
+  The timing engine runs in "quad" timing mode, analyzing min and max delays
+  for both slow and fast corners. You can configure the type of analysis
+  performed by the config_timing_corners command. However, it is not
+  recommended to change the default because this reduces the timing analysis
+  coverage.
+
+  Note: By default the report is written to the Tcl console or STD output.
+  However, the results can also be written to the GUI, to a file, or returned
+  as a string if desired.
+
+Arguments:
+
+  -from <args> - (Optional) The starting points of the timing paths to be
+  analyzed. Ports, pins, or cells can be specified as timing path
+  startpoints. You can also specify a clock object, and all startpoints
+  clocked by the named clock will be analyzed.
+
+  -rise_from <args> - (Optional) Similar to the -from option, but only the
+  rising edge of signals coming from the startpoints are considered for
+  timing analysis. If a clock object is specified, only the paths launched by
+  the rising edge of the clock are considered as startpoints.
+
+  -fall_from <args> - (Optional) Similar to the -from option, but only the
+  falling edge of signals coming from the startpoints are considered for
+  timing analysis. If a clock object is specified, only the paths launched by
+  the falling edge of the clock are considered as startpoints.
+
+  -to <args> - (Optional) The endpoints, or destination objects of timing
+  paths to be analyzed. Ports, pins, and cell objects can be specified as
+  endpoints. A clock object can also be specified, in which case endpoints
+  clocked by the named clock are analyzed.
+
+  -rise_to <args> - (Optional) Similar to the -to option, but only the rising
+  edge of signals going to the endpoints is considered for timing analysis.
+  If a clock object is specified, only the paths captured by the rising edge
+  of the named clock are considered as endpoints.
+
+  -fall_to <args> - (Optional) Similar to the -to option, but only the
+  falling edge of signals going to the endpoints is considered for timing
+  analysis. If a clock object is specified, only the paths captured by the
+  falling edge of the named clock are considered as endpoints.
+
+  -through <args> - (Optional) Consider only paths through the specified
+  pins, cell instance, or nets during timing analysis. You can specify
+  individual -through (or -rise_through and -fall_through) points in sequence
+  to define a specific path through the design for analysis. The order of the
+  specified through points is important to define a specific path. You can
+  also specify through points with multiple objects, in which case the timing
+  path can pass through any of the specified through objects.
+
+  -rise_through <args> - (Optional) Similar to the -through option, but
+  timing analysis is only performed on paths with a rising transition at the
+  specified objects.
+
+  -fall_through <args> - (Optional) Similar to the -through option, but
+  timing analysis is only performed on paths with a falling transition at the
+  specified objects.
+
+  -delay_type <arg> - (Optional) Specifies the type of delay to analyze when
+  running the timing report. The valid values are min, max, min_max,
+  max_rise, max_fall, min_rise, min_fall. The default setting for -delay_type
+  is max.
+
+  -setup - (Optional) Check for setup violations. This is the same as
+  specifying -delay_type max.
+
+  -hold - (Optional) Check for hold violations. This is the same as
+  specifying -delay_type min.
+
+  Note: -setup and -hold can be specified together, which is the same as
+  specifying -delay_type min_max.
+
+  -max_paths <arg> - (Optional) The maximum number of paths to output when
+  sorted by slack; or maximum number of paths per path group when sorted by
+  group, as specified by -sort_by. This is specified as a value greater than
+  or equal to 1. By default the report_timing command will report the single
+  worst timing path, or the worst path per path group.
+
+  -nworst <arg> - (Optional) The number of timing paths per endpoint to
+  output in the timing report. The timing report will return the <N> worst
+  paths based on the specified value, greater than or equal to 1. The default
+  setting is 1.
+
+  -unique_pins - (Optional) Show only one timing path for each unique set of
+  pins.
+
+  -path_type <arg> - (Optional) Specify the path data to output in the timing
+  report. The default format is full_clock_expanded. The valid path types
+  are:
+
+   *  end - Shows the endpoint of the path only, with calculated timing values.
+
+   *  summary - Displays the startpoints and endpoints with slack calculation.
+
+   *  short - Displays the startpoints and endpoints with calculated timing
+      values.
+
+   *  full - Displays the full timing path, including startpoints, through
+      points, and endpoints.
+
+   *  full_clock - Displays full clock paths in addition to the full timing
+      path.
+
+   *  full_clock_expanded - Displays full clock paths between a master clock
+      and generated clocks in addition to the full_clock timing path. This is
+      the default setting.
+
+  -input_pins - (Optional) Show input pins in the timing path report. For use
+  with -path_type full, full_clock, and full_clock_expanded.
+
+  -no_header - (Optional) Do not write a header to the report.
+
+  -no_reused_label - (Optional) Disable the reporting of reuse information in
+  designs that use incremental place and route based on an existing design
+  checkpoint (DCP) file. Both placement and routing can be completed
+  incrementally, based on prior results stored in a Design Checkpoint file
+  (DCP), using the incremental implementation flow. Refer to the
+  read_checkpoint command, or to Vivado Design Suite User Guide:
+  Implementation (UG904) for more information on incremental place and route.
+  By default, designs using incremental place and route have pins labeled
+  with information related to the physical data reused from the specified
+  incremental checkpoint. This option removes the reuse labels including the
+  following:
+
+   *  Routing: Placement and routing to this pin are reused.
+
+   *  Placement: Cell placement is reused but routing to this pin is not
+      reused.
+
+   *  Moved: Neither cell placement nor routing to this pin is reused.
+
+   *  New: The cell, net, or pin is new. It does not exist in the incremental
+      checkpoint.
+
+  -slack_lesser_than <arg> - (Optional) Report timing on paths with a
+  calculated slack value less than the specified value. Used with
+  -slack_greater_than to provide a range of slack values of specific
+  interest.
+
+  -slack_greater_than <arg> - (Optional) Report timing on paths with a
+  calculated slack value greater than the specified value. Used with
+  -slack_lesser_than to provide a range of slack values of specific interest.
+
+  -group <args> - (Optional) Report timing for paths in the specified path
+  groups. Currently defined path groups can be determined with the
+  get_path_groups command.
+
+  Note: Each clock creates a path group. Path groups can also be defined with
+  the group_path command. The -group option cannot be specified with
+  -of_objects, which also specifies timing path objects.
+
+  -sort_by [ slack | group ] - (Optional) Sort timing paths in the report by
+  slack values, or by path group. Valid values are slack or group. By
+  default, the report_timing command reports the worst, or -nworst, timing
+  paths in the design. However, with -sort_by group, the report_timing
+  command returns the worst, or -nworst, paths of each path group.
+
+  -no_report_unconstrained - (Optional) Do not report timing on unconstrained
+  paths. Without this option specified, the report_timing command will
+  include unconstrained paths which will have infinite slack.
+
+  -user_ignored - (Optional) Report only the paths that are usually ignored
+  by timing due to presence of set_false_path or set_clock_groups
+  constraints.
+
+  Note: The -user_ignored and -no_report_unconstrained options are mutually
+  exclusive and cannot be specified together. The -user_ignored option is
+  also mutually exclusive with the -slack_lesser_than and -slack_greater_than
+  options.
+
+  -of_objects <args> - (Optional) Report timing on the specified timing path
+  objects. Used with the get_timing_paths command.
+
+  Note: The -of_objects option cannot be used with the various forms of
+  -from, -to, or -through options which are also used to identify timing
+  paths to report. The -of_objects option, which defines a timing path object
+  containing a DELAY_TYPE property, cannot be used with -setup, -hold or
+  -delay_type, which all also define a delay type. The -of_objects option
+  also cannot be specified with -group, which defines groups of timing path
+  objects.
+
+  -significant_digits <arg> - (Optional) The number of significant digits in
+  the output results. The valid range is 0 to 3. The default setting is 3
+  significant digits.
+
+  -column_style [ variable_width | anchor_left | fixed_width ] - (Optional)
+  Specify the format of the timing path portion of the timing report output.
+  The default format is anchor_left.
+
+  -file <arg> - (Optional) Write the report into the specified file. The
+  specified file will be overwritten if one already exists, unless -append is
+  also specified.
+
+  Note: If the path is not specified as part of the file name, the file will
+  be written into the current working directory, or the directory from which
+  the tool was launched.
+
+  -append - (Optional) Append the output of the command to the specified file
+  rather than overwriting it.
+
+  Note: The -append option can only be used with the -file option.
+
+  -name <arg> - (Optional) Specifies the name of the results set for the GUI.
+
+  -no_pr_attribute <arg> - (Optional) This option disables the standard
+  reporting of the Dynamic Function eXchange (DFX) attribute data. For DFX
+  designs, the logical path is appended to identify cells as belonging to a
+  reconfigurable partition (:RP#), or to the static region of the design
+  (:S).
+
+  -routable_nets - (Optional) Report the number of routable nets traversed as
+  a property of the timing paths returned.
+
+  -return_string - (Optional) Directs the output to a Tcl string rather than
+  to the standard output. The Tcl string can be captured by a variable
+  definition and parsed or otherwise processed.
+
+  Note: This argument cannot be used with the -file option.
+
+  -warn_on_violation - (Optional) Specify that a Critical Warning will be
+  generated by the Vivado Design Suite when the timing report contains a
+  timing violation.
+
+  -cells <arg> - (Option) Generate the timing report on the specified
+  hierarchical cells. The details of the report will be based on the
+  specified cells rather than the whole design.
+
+  -rpx <arg> - (Optional) Specify the file name and path of an Xilinx report
+  file (RPX) to write. This is different from writing the report results to a
+  file using the -file argument. The RPX file is an interactive report that
+  contains all the report information and can be reloaded into memory in the
+  Vivado Design Suite using the open_report command. You should add a .rpx
+  file extension to the specified file name, as the Vivado tool will not
+  automatically assign a file extension.
+
+  Note: If the path is not specified as part of the file name, the file will
+  be written into the current working directory, or the directory from which
+  the tool was launched.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+Examples:
+
+  The following example reports the timing for the 5 worst paths in the
+  design, reporting the full timing path, including input pins, with timing
+  values:
+
+    
+    report_timing -nworst 5 -path_type full -input_pins 
+    
+
+  The following example shows the use of the multiple through points to
+  define both a specific path (through state_reg1) and alternate paths
+  (through count_3 or count_4), and writes the timing results to the
+  specified file:
+
+    report_timing -from go -through {state_reg1} \  
+       -through { count_3  count_4 } \  
+       -to done -path_type summary -file C:/Data/timing1.txt 
+    
+
+See Also:
+
+   *  get_path_groups
+   *  get_timing_paths
+   *  group_path
+   *  place_design
+   *  report_timing_summary
+   *  route_design
+   *  set_clock_groups
+   *  set_false_path
+   *  set_msg_limit
+report_timing -sort_by slack
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Aug 25 13:39:09 2021
+| Host         : DESKTOP-PB3IH3G running 64-bit major release  (build 9200)
+| Command      : report_timing -sort_by slack
+| Design       : project_reti_logiche
+| Device       : 7a200t-fbg484
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             5.239ns  (required time - arrival time)
+  Source:                 rMin_out_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clock  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rSL_out_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by clock  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clock rise@10.000ns - clock rise@0.000ns)
+  Data Path Delay:        4.610ns  (logic 1.980ns (42.950%)  route 2.630ns (57.050%))
+  Logic Levels:           6  (CARRY4=2 LUT3=2 LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.100ns = ( 12.100 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.424ns
+    Clock Pessimism Removal (CPR):    0.178ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  i_clk (IN)
+                         net (fo=0)                   0.000     0.000    i_clk
+                         IBUF (Prop_ibuf_I_O)         0.944     0.944 r  i_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.744    i_clk_IBUF
+                         BUFG (Prop_bufg_I_O)         0.096     1.840 r  i_clk_IBUF_BUFG_inst/O
+                         net (fo=88, unplaced)        0.584     2.424    i_clk_IBUF_BUFG
+                         FDCE                                         r  rMin_out_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.456     2.880 r  rMin_out_reg[1]/Q
+                         net (fo=7, unplaced)         0.776     3.656    rMin_out[1]
+                         LUT3 (Prop_lut3_I0_O)        0.295     3.951 r  rSL_out[3]_i_9/O
+                         net (fo=1, unplaced)         0.000     3.951    rSL_out[3]_i_9_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     4.349 r  rSL_out_reg[3]_i_4/CO[3]
+                         net (fo=1, unplaced)         0.009     4.358    rSL_out_reg[3]_i_4_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     4.614 r  rSL_out_reg[3]_i_5/O[2]
+                         net (fo=3, unplaced)         0.923     5.537    muxSL_in[6]
+                         LUT3 (Prop_lut3_I0_O)        0.327     5.864 r  rSL_out[3]_i_3/O
+                         net (fo=4, unplaced)         0.473     6.337    rSL_out[3]_i_3_n_0
+                         LUT6 (Prop_lut6_I5_O)        0.124     6.461 f  rSL_out[0]_i_3/O
+                         net (fo=1, unplaced)         0.449     6.910    rSL_in1
+                         LUT4 (Prop_lut4_I2_O)        0.124     7.034 r  rSL_out[0]_i_1/O
+                         net (fo=1, unplaced)         0.000     7.034    rSL_out[0]_i_1_n_0
+                         FDCE                                         r  rSL_out_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock rise edge)     10.000    10.000 r  
+                                                      0.000    10.000 r  i_clk (IN)
+                         net (fo=0)                   0.000    10.000    i_clk
+                         IBUF (Prop_ibuf_I_O)         0.811    10.811 r  i_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.760    11.570    i_clk_IBUF
+                         BUFG (Prop_bufg_I_O)         0.091    11.661 r  i_clk_IBUF_BUFG_inst/O
+                         net (fo=88, unplaced)        0.439    12.100    i_clk_IBUF_BUFG
+                         FDCE                                         r  rSL_out_reg[0]/C
+                         clock pessimism              0.178    12.279    
+                         clock uncertainty           -0.035    12.243    
+                         FDCE (Setup_fdce_C_D)        0.029    12.272    rSL_out_reg[0]
+  -------------------------------------------------------------------
+                         required time                         12.272    
+                         arrival time                          -7.034    
+  -------------------------------------------------------------------
+                         slack                                  5.239    
+
+
+
+
+report_timing -group -sort_by slack
+ERROR: [Common 17-165] Too many positional options when parsing 'slack', please type 'report_timing -help' for usage info.
+report_timing -help
+report_timing
+
+Description: 
+Report timing paths
+
+Syntax: 
+report_timing  [-from <args>] [-rise_from <args>] [-fall_from <args>]
+               [-to <args>] [-rise_to <args>] [-fall_to <args>]
+               [-through <args>] [-rise_through <args>] [-fall_through <args>]
+               [-delay_type <arg>] [-setup] [-hold] [-max_paths <arg>]
+               [-nworst <arg>] [-unique_pins] [-path_type <arg>] [-input_pins]
+               [-no_header] [-no_reused_label] [-slack_lesser_than <arg>]
+               [-slack_greater_than <arg>] [-group <args>] [-sort_by <arg>]
+               [-no_report_unconstrained] [-user_ignored] [-of_objects <args>]
+               [-significant_digits <arg>] [-column_style <arg>] [-file <arg>]
+               [-append] [-name <arg>] [-no_pr_attribute] [-routable_nets]
+               [-return_string] [-warn_on_violation] [-cells <args>]
+               [-rpx <arg>] [-quiet] [-verbose]
+
+Usage: 
+  Name                        Description
+  ---------------------------------------
+  [-from]                     From pins, ports, cells or clocks
+  [-rise_from]                Rising from pins, ports, cells or clocks
+  [-fall_from]                Falling from pins, ports, cells  or clocks
+  [-to]                       To pins, ports, cells or clocks
+  [-rise_to]                  Rising to pins, ports, cells or clocks
+  [-fall_to]                  Falling to pins, ports, cells or clocks
+  [-through]                  Through pins, ports, cells or nets
+  [-rise_through]             Rising through pins, ports, cells or nets
+  [-fall_through]             Falling through pins, ports, cells or nets
+  [-delay_type]               Type of path delay: Values: max, min, min_max, 
+                              max_rise, max_fall, min_rise, min_fall
+                              Default: max
+  [-setup]                    Report max delay timing paths (equivalent to 
+                              -delay_type max)
+  [-hold]                     Report min delay timing paths (equivalent to 
+                              -delay_type min)
+  [-max_paths]                Maximum number of paths to output when sorted 
+                              by slack, or per path group when sorted by 
+                              group: Value >=1
+                              Default: 1
+  [-nworst]                   List up to N worst paths to endpoint: Value >=1
+                              Default: 1
+  [-unique_pins]              for each unique set of pins, show at most 1 
+                              path per path group
+  [-path_type]                Format for path report: Values: end, summary, 
+                              short, full, full_clock, full_clock_expanded
+                              Default: full_clock_expanded
+  [-input_pins]               Show input pins in path
+  [-no_header]                Do not generate a report header
+  [-no_reused_label]          Do not label reuse status on pins in the report
+  [-slack_lesser_than]        Display paths with slack less than this
+                              Default: 1e+30
+  [-slack_greater_than]       Display paths with slack greater than this
+                              Default: -1e+30
+  [-group]                    Limit report to paths in this group(s)
+  [-sort_by]                  Sorting order of paths: Values: group, slack
+                              Default: slack
+  [-no_report_unconstrained]  Do not report infinite slack paths
+  [-user_ignored]             Only report paths which have infinite slack 
+                              because of set_false_path or set_clock_groups 
+                              timing constraints
+  [-of_objects]               Report timing for these paths
+  [-significant_digits]       Number of digits to display: Range: 0 to 3
+                              Default: 3
+  [-column_style]             style for path report columns: Values: 
+                              variable_width, anchor_left, fixed_width
+                              Default: anchor_left
+  [-file]                     Filename to output results to. (send output to 
+                              console if -file is not used)
+  [-append]                   Append the results to file, don't overwrite the
+                              results file
+  [-name]                     Output the results to GUI panel with this name
+  [-no_pr_attribute]          for Dynamic Function eXchange designs, do not 
+                              report whether netlist resources are in the 
+                              static or reconfigurable regions
+  [-routable_nets]            store the number of routable nets traversed as 
+                              a property on timing paths.
+  [-return_string]            return report as string
+  [-warn_on_violation]        issue a critical warning when the report 
+                              contains a timing violation
+  [-cells]                    run report_timing on the specified cell(s)
+  [-rpx]                      Filename to output interactive results to.
+  [-quiet]                    Ignore command errors
+  [-verbose]                  Suspend message limits during command execution
+
+Categories: 
+Report, Timing
+
+Description:
+
+  Note: If the design has no timing constraints, report_timing reports on
+  unconstrained paths in the design. However, if even one path has timing
+  constraints then report_timing only reports on the constrained paths in the
+  design, unless unconstrained timing paths are specified by the -from/-to
+  options.
+
+  This command performs timing analysis on the specified timing paths of the
+  current Synthesized or Implemented Design. By default the tool reports the
+  timing path with the worst calculated slack within each path group.
+  However, you can optionally increase the number of paths and delays
+  reported with the use of the -nworst or -max_paths arguments.
+
+  Note: The report_timing can be multi-threaded to speed the process. Refer
+  to the set_param command for more information on setting the
+  general.maxThreads parameter.
+
+  The timing engine runs in "quad" timing mode, analyzing min and max delays
+  for both slow and fast corners. You can configure the type of analysis
+  performed by the config_timing_corners command. However, it is not
+  recommended to change the default because this reduces the timing analysis
+  coverage.
+
+  Note: By default the report is written to the Tcl console or STD output.
+  However, the results can also be written to the GUI, to a file, or returned
+  as a string if desired.
+
+Arguments:
+
+  -from <args> - (Optional) The starting points of the timing paths to be
+  analyzed. Ports, pins, or cells can be specified as timing path
+  startpoints. You can also specify a clock object, and all startpoints
+  clocked by the named clock will be analyzed.
+
+  -rise_from <args> - (Optional) Similar to the -from option, but only the
+  rising edge of signals coming from the startpoints are considered for
+  timing analysis. If a clock object is specified, only the paths launched by
+  the rising edge of the clock are considered as startpoints.
+
+  -fall_from <args> - (Optional) Similar to the -from option, but only the
+  falling edge of signals coming from the startpoints are considered for
+  timing analysis. If a clock object is specified, only the paths launched by
+  the falling edge of the clock are considered as startpoints.
+
+  -to <args> - (Optional) The endpoints, or destination objects of timing
+  paths to be analyzed. Ports, pins, and cell objects can be specified as
+  endpoints. A clock object can also be specified, in which case endpoints
+  clocked by the named clock are analyzed.
+
+  -rise_to <args> - (Optional) Similar to the -to option, but only the rising
+  edge of signals going to the endpoints is considered for timing analysis.
+  If a clock object is specified, only the paths captured by the rising edge
+  of the named clock are considered as endpoints.
+
+  -fall_to <args> - (Optional) Similar to the -to option, but only the
+  falling edge of signals going to the endpoints is considered for timing
+  analysis. If a clock object is specified, only the paths captured by the
+  falling edge of the named clock are considered as endpoints.
+
+  -through <args> - (Optional) Consider only paths through the specified
+  pins, cell instance, or nets during timing analysis. You can specify
+  individual -through (or -rise_through and -fall_through) points in sequence
+  to define a specific path through the design for analysis. The order of the
+  specified through points is important to define a specific path. You can
+  also specify through points with multiple objects, in which case the timing
+  path can pass through any of the specified through objects.
+
+  -rise_through <args> - (Optional) Similar to the -through option, but
+  timing analysis is only performed on paths with a rising transition at the
+  specified objects.
+
+  -fall_through <args> - (Optional) Similar to the -through option, but
+  timing analysis is only performed on paths with a falling transition at the
+  specified objects.
+
+  -delay_type <arg> - (Optional) Specifies the type of delay to analyze when
+  running the timing report. The valid values are min, max, min_max,
+  max_rise, max_fall, min_rise, min_fall. The default setting for -delay_type
+  is max.
+
+  -setup - (Optional) Check for setup violations. This is the same as
+  specifying -delay_type max.
+
+  -hold - (Optional) Check for hold violations. This is the same as
+  specifying -delay_type min.
+
+  Note: -setup and -hold can be specified together, which is the same as
+  specifying -delay_type min_max.
+
+  -max_paths <arg> - (Optional) The maximum number of paths to output when
+  sorted by slack; or maximum number of paths per path group when sorted by
+  group, as specified by -sort_by. This is specified as a value greater than
+  or equal to 1. By default the report_timing command will report the single
+  worst timing path, or the worst path per path group.
+
+  -nworst <arg> - (Optional) The number of timing paths per endpoint to
+  output in the timing report. The timing report will return the <N> worst
+  paths based on the specified value, greater than or equal to 1. The default
+  setting is 1.
+
+  -unique_pins - (Optional) Show only one timing path for each unique set of
+  pins.
+
+  -path_type <arg> - (Optional) Specify the path data to output in the timing
+  report. The default format is full_clock_expanded. The valid path types
+  are:
+
+   *  end - Shows the endpoint of the path only, with calculated timing values.
+
+   *  summary - Displays the startpoints and endpoints with slack calculation.
+
+   *  short - Displays the startpoints and endpoints with calculated timing
+      values.
+
+   *  full - Displays the full timing path, including startpoints, through
+      points, and endpoints.
+
+   *  full_clock - Displays full clock paths in addition to the full timing
+      path.
+
+   *  full_clock_expanded - Displays full clock paths between a master clock
+      and generated clocks in addition to the full_clock timing path. This is
+      the default setting.
+
+  -input_pins - (Optional) Show input pins in the timing path report. For use
+  with -path_type full, full_clock, and full_clock_expanded.
+
+  -no_header - (Optional) Do not write a header to the report.
+
+  -no_reused_label - (Optional) Disable the reporting of reuse information in
+  designs that use incremental place and route based on an existing design
+  checkpoint (DCP) file. Both placement and routing can be completed
+  incrementally, based on prior results stored in a Design Checkpoint file
+  (DCP), using the incremental implementation flow. Refer to the
+  read_checkpoint command, or to Vivado Design Suite User Guide:
+  Implementation (UG904) for more information on incremental place and route.
+  By default, designs using incremental place and route have pins labeled
+  with information related to the physical data reused from the specified
+  incremental checkpoint. This option removes the reuse labels including the
+  following:
+
+   *  Routing: Placement and routing to this pin are reused.
+
+   *  Placement: Cell placement is reused but routing to this pin is not
+      reused.
+
+   *  Moved: Neither cell placement nor routing to this pin is reused.
+
+   *  New: The cell, net, or pin is new. It does not exist in the incremental
+      checkpoint.
+
+  -slack_lesser_than <arg> - (Optional) Report timing on paths with a
+  calculated slack value less than the specified value. Used with
+  -slack_greater_than to provide a range of slack values of specific
+  interest.
+
+  -slack_greater_than <arg> - (Optional) Report timing on paths with a
+  calculated slack value greater than the specified value. Used with
+  -slack_lesser_than to provide a range of slack values of specific interest.
+
+  -group <args> - (Optional) Report timing for paths in the specified path
+  groups. Currently defined path groups can be determined with the
+  get_path_groups command.
+
+  Note: Each clock creates a path group. Path groups can also be defined with
+  the group_path command. The -group option cannot be specified with
+  -of_objects, which also specifies timing path objects.
+
+  -sort_by [ slack | group ] - (Optional) Sort timing paths in the report by
+  slack values, or by path group. Valid values are slack or group. By
+  default, the report_timing command reports the worst, or -nworst, timing
+  paths in the design. However, with -sort_by group, the report_timing
+  command returns the worst, or -nworst, paths of each path group.
+
+  -no_report_unconstrained - (Optional) Do not report timing on unconstrained
+  paths. Without this option specified, the report_timing command will
+  include unconstrained paths which will have infinite slack.
+
+  -user_ignored - (Optional) Report only the paths that are usually ignored
+  by timing due to presence of set_false_path or set_clock_groups
+  constraints.
+
+  Note: The -user_ignored and -no_report_unconstrained options are mutually
+  exclusive and cannot be specified together. The -user_ignored option is
+  also mutually exclusive with the -slack_lesser_than and -slack_greater_than
+  options.
+
+  -of_objects <args> - (Optional) Report timing on the specified timing path
+  objects. Used with the get_timing_paths command.
+
+  Note: The -of_objects option cannot be used with the various forms of
+  -from, -to, or -through options which are also used to identify timing
+  paths to report. The -of_objects option, which defines a timing path object
+  containing a DELAY_TYPE property, cannot be used with -setup, -hold or
+  -delay_type, which all also define a delay type. The -of_objects option
+  also cannot be specified with -group, which defines groups of timing path
+  objects.
+
+  -significant_digits <arg> - (Optional) The number of significant digits in
+  the output results. The valid range is 0 to 3. The default setting is 3
+  significant digits.
+
+  -column_style [ variable_width | anchor_left | fixed_width ] - (Optional)
+  Specify the format of the timing path portion of the timing report output.
+  The default format is anchor_left.
+
+  -file <arg> - (Optional) Write the report into the specified file. The
+  specified file will be overwritten if one already exists, unless -append is
+  also specified.
+
+  Note: If the path is not specified as part of the file name, the file will
+  be written into the current working directory, or the directory from which
+  the tool was launched.
+
+  -append - (Optional) Append the output of the command to the specified file
+  rather than overwriting it.
+
+  Note: The -append option can only be used with the -file option.
+
+  -name <arg> - (Optional) Specifies the name of the results set for the GUI.
+
+  -no_pr_attribute <arg> - (Optional) This option disables the standard
+  reporting of the Dynamic Function eXchange (DFX) attribute data. For DFX
+  designs, the logical path is appended to identify cells as belonging to a
+  reconfigurable partition (:RP#), or to the static region of the design
+  (:S).
+
+  -routable_nets - (Optional) Report the number of routable nets traversed as
+  a property of the timing paths returned.
+
+  -return_string - (Optional) Directs the output to a Tcl string rather than
+  to the standard output. The Tcl string can be captured by a variable
+  definition and parsed or otherwise processed.
+
+  Note: This argument cannot be used with the -file option.
+
+  -warn_on_violation - (Optional) Specify that a Critical Warning will be
+  generated by the Vivado Design Suite when the timing report contains a
+  timing violation.
+
+  -cells <arg> - (Option) Generate the timing report on the specified
+  hierarchical cells. The details of the report will be based on the
+  specified cells rather than the whole design.
+
+  -rpx <arg> - (Optional) Specify the file name and path of an Xilinx report
+  file (RPX) to write. This is different from writing the report results to a
+  file using the -file argument. The RPX file is an interactive report that
+  contains all the report information and can be reloaded into memory in the
+  Vivado Design Suite using the open_report command. You should add a .rpx
+  file extension to the specified file name, as the Vivado tool will not
+  automatically assign a file extension.
+
+  Note: If the path is not specified as part of the file name, the file will
+  be written into the current working directory, or the directory from which
+  the tool was launched.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+Examples:
+
+  The following example reports the timing for the 5 worst paths in the
+  design, reporting the full timing path, including input pins, with timing
+  values:
+
+    
+    report_timing -nworst 5 -path_type full -input_pins 
+    
+
+  The following example shows the use of the multiple through points to
+  define both a specific path (through state_reg1) and alternate paths
+  (through count_3 or count_4), and writes the timing results to the
+  specified file:
+
+    report_timing -from go -through {state_reg1} \  
+       -through { count_3  count_4 } \  
+       -to done -path_type summary -file C:/Data/timing1.txt 
+    
+
+See Also:
+
+   *  get_path_groups
+   *  get_timing_paths
+   *  group_path
+   *  place_design
+   *  report_timing_summary
+   *  route_design
+   *  set_clock_groups
+   *  set_false_path
+   *  set_msg_limit
+report_timing
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Aug 25 13:47:09 2021
+| Host         : DESKTOP-PB3IH3G running 64-bit major release  (build 9200)
+| Command      : report_timing
+| Design       : project_reti_logiche
+| Device       : 7a200t-fbg484
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             5.239ns  (required time - arrival time)
+  Source:                 rMin_out_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clock  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            rSL_out_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by clock  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clock rise@10.000ns - clock rise@0.000ns)
+  Data Path Delay:        4.610ns  (logic 1.980ns (42.950%)  route 2.630ns (57.050%))
+  Logic Levels:           6  (CARRY4=2 LUT3=2 LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.100ns = ( 12.100 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.424ns
+    Clock Pessimism Removal (CPR):    0.178ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  i_clk (IN)
+                         net (fo=0)                   0.000     0.000    i_clk
+                         IBUF (Prop_ibuf_I_O)         0.944     0.944 r  i_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.744    i_clk_IBUF
+                         BUFG (Prop_bufg_I_O)         0.096     1.840 r  i_clk_IBUF_BUFG_inst/O
+                         net (fo=88, unplaced)        0.584     2.424    i_clk_IBUF_BUFG
+                         FDCE                                         r  rMin_out_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.456     2.880 r  rMin_out_reg[1]/Q
+                         net (fo=7, unplaced)         0.776     3.656    rMin_out[1]
+                         LUT3 (Prop_lut3_I0_O)        0.295     3.951 r  rSL_out[3]_i_9/O
+                         net (fo=1, unplaced)         0.000     3.951    rSL_out[3]_i_9_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     4.349 r  rSL_out_reg[3]_i_4/CO[3]
+                         net (fo=1, unplaced)         0.009     4.358    rSL_out_reg[3]_i_4_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     4.614 r  rSL_out_reg[3]_i_5/O[2]
+                         net (fo=3, unplaced)         0.923     5.537    muxSL_in[6]
+                         LUT3 (Prop_lut3_I0_O)        0.327     5.864 r  rSL_out[3]_i_3/O
+                         net (fo=4, unplaced)         0.473     6.337    rSL_out[3]_i_3_n_0
+                         LUT6 (Prop_lut6_I5_O)        0.124     6.461 f  rSL_out[0]_i_3/O
+                         net (fo=1, unplaced)         0.449     6.910    rSL_in1
+                         LUT4 (Prop_lut4_I2_O)        0.124     7.034 r  rSL_out[0]_i_1/O
+                         net (fo=1, unplaced)         0.000     7.034    rSL_out[0]_i_1_n_0
+                         FDCE                                         r  rSL_out_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock rise edge)     10.000    10.000 r  
+                                                      0.000    10.000 r  i_clk (IN)
+                         net (fo=0)                   0.000    10.000    i_clk
+                         IBUF (Prop_ibuf_I_O)         0.811    10.811 r  i_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.760    11.570    i_clk_IBUF
+                         BUFG (Prop_bufg_I_O)         0.091    11.661 r  i_clk_IBUF_BUFG_inst/O
+                         net (fo=88, unplaced)        0.439    12.100    i_clk_IBUF_BUFG
+                         FDCE                                         r  rSL_out_reg[0]/C
+                         clock pessimism              0.178    12.279    
+                         clock uncertainty           -0.035    12.243    
+                         FDCE (Setup_fdce_C_D)        0.029    12.272    rSL_out_reg[0]
+  -------------------------------------------------------------------
+                         required time                         12.272    
+                         arrival time                          -7.034    
+  -------------------------------------------------------------------
+                         slack                                  5.239    
+
+
+
+
 close_sim
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
 INFO: [Simtcl 6-16] Simulation closed
-close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 2346.348 ; gain = 0.000
-ERROR: [Common 17-39] 'close_sim' failed due to earlier errors.
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
-INFO: [Common 17-14] Message 'Vivado 12-106' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+create_slack_histogram -significant_digits 3 -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 2147483647 -nworst 1 -delay_type max -sort_by slack.
+report_timing -delay_type min_max -max_paths 10 -sort_by group -input_pins -routable_nets -name timing_3
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 10 -nworst 1 -delay_type min_max -sort_by group.

@@ -1,0 +1,1100 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Aug 24 22:25:28 2021
+# Process ID: 4336
+# Current directory: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17112 C:\Users\emili\Documents\SCUOLA\POLITECNICO\3ANNO\Progetto_reti_logiche\Progetto-Reti-Logiche-20-21\project_reti_logiche\project_reti_logiche.xpr
+# Log file: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado.log
+# Journal file: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 1023.820 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation -simset [get_filesets sim_2 ]
+Command: launch_simulation -simset sim_2
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 22:29:22 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 96.191 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 22:29:22 2021...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:35 . Memory (MB): peak = 1023.820 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '36' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_behav -key {Behavioral:sim_2:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source project_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1023.820 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:46 . Memory (MB): peak = 1023.820 ; gain = 0.000
+run 100 us
+run 100 us
+Failure: Simulation Ended! TEST PASSATO
+Time: 192977500 ps  Iteration: 0  Process: /project_tb/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-bigData.vhd
+$finish called at time : 192977500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-bigData.vhd" Line 8585
+set_property top project_tb3 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+update_compile_order -fileset sim_2
+launch_simulation -simset [get_filesets sim_2 ]
+Command: launch_simulation -simset sim_2
+boost::filesystem::remove: Impossibile accedere al file. Il file è utilizzato da un altro processo: "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1023.820 ; gain = 0.000
+launch_simulation -simset [get_filesets sim_2 ]
+Command: launch_simulation -simset sim_2
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb3' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj project_tb3_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb3_behav xil_defaultlib.project_tb3 -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb3_behav xil_defaultlib.project_tb3 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb3
+Built simulation snapshot project_tb3_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb3_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb3_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 22:34:09 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 22:34:09 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1023.820 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb3_behav -key {Behavioral:sim_2:Functional:project_tb3} -tclbatch {project_tb3.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source project_tb3.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb3/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/project_tb3/RAM1" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/project_tb3/RAM2" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1023.820 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb3_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1023.820 ; gain = 0.000
+run 100 us
+Failure: Simulation Ended! TEST PASSATO
+Time: 1862500 ps  Iteration: 0  Process: /project_tb3/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbanch-moreImages.vhd
+$finish called at time : 1862500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbanch-moreImages.vhd" Line 174
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+add_files -fileset sim_2 -norecurse C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example1.vhd
+update_compile_order -fileset sim_2
+set_property top project_tb_e1 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+update_compile_order -fileset sim_2
+launch_simulation -simset [get_filesets sim_2 ]
+Command: launch_simulation -simset sim_2
+boost::filesystem::remove: Impossibile accedere al file. Il file è utilizzato da un altro processo: "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1075.707 ; gain = 0.000
+launch_simulation -simset [get_filesets sim_2 ]
+Command: launch_simulation -simset sim_2
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_e1' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_e1_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb_e1'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e1_behav xil_defaultlib.project_tb_e1 -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e1_behav xil_defaultlib.project_tb_e1 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb_e1
+Built simulation snapshot project_tb_e1_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e1_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e1_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 23:04:18 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 23:04:18 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1075.707 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_e1_behav -key {Behavioral:sim_2:Functional:project_tb_e1} -tclbatch {project_tb_e1.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source project_tb_e1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb_e1/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_e1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1075.707 ; gain = 0.000
+run 100 us
+Failure: Simulation Ended! TEST PASSATO
+Time: 1157500 ps  Iteration: 0  Process: /project_tb_e1/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example1.vhd
+$finish called at time : 1157500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example1.vhd" Line 125
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+add_files -fileset sim_2 -norecurse {C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example2.vhd C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example3.vhd C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example4.vhd C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example5.vhd}
+update_compile_order -fileset sim_2
+set_property top project_tb_e2 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+update_compile_order -fileset sim_2
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1159.535 ; gain = 77.652
+launch_simulation -simset [get_filesets sim_2 ]
+Command: launch_simulation -simset sim_2
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_e2' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_e2_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb_e2'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e2_behav xil_defaultlib.project_tb_e2 -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e2_behav xil_defaultlib.project_tb_e2 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb_e2
+Built simulation snapshot project_tb_e2_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e2_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e2_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 23:26:39 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 113.730 ; gain = 17.641
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 23:26:39 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1159.535 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_e2_behav -key {Behavioral:sim_2:Functional:project_tb_e2} -tclbatch {project_tb_e2.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source project_tb_e2.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb_e2/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_e2_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1159.773 ; gain = 0.238
+run 100 us
+Failure: Simulation Ended! TEST PASSATO
+Time: 1157500 ps  Iteration: 0  Process: /project_tb_e2/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example2.vhd
+$finish called at time : 1157500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example2.vhd" Line 125
+set_property top project_tb_e3 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+update_compile_order -fileset sim_2
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1214.863 ; gain = 0.000
+launch_simulation -simset [get_filesets sim_2 ]
+Command: launch_simulation -simset sim_2
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_e3' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_e3_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb_e3'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e3_behav xil_defaultlib.project_tb_e3 -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e3_behav xil_defaultlib.project_tb_e3 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb_e3
+Built simulation snapshot project_tb_e3_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e3_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e3_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 23:28:01 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 113.738 ; gain = 17.570
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 23:28:01 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1214.863 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_e3_behav -key {Behavioral:sim_2:Functional:project_tb_e3} -tclbatch {project_tb_e3.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source project_tb_e3.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb_e3/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_e3_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1214.863 ; gain = 0.000
+run 200 us
+Failure: Simulation Ended! TEST PASSATO
+Time: 1157500 ps  Iteration: 0  Process: /project_tb_e3/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example3.vhd
+$finish called at time : 1157500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example3.vhd" Line 125
+set_property top project_tb_e4 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+update_compile_order -fileset sim_2
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1225.949 ; gain = 11.086
+launch_simulation -simset [get_filesets sim_2 ]
+Command: launch_simulation -simset sim_2
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_e4' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_e4_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb_e4'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e4_behav xil_defaultlib.project_tb_e4 -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e4_behav xil_defaultlib.project_tb_e4 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb_e4
+Built simulation snapshot project_tb_e4_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e4_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e4_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 23:29:22 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 113.785 ; gain = 17.711
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 23:29:22 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1225.949 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_e4_behav -key {Behavioral:sim_2:Functional:project_tb_e4} -tclbatch {project_tb_e4.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source project_tb_e4.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb_e4/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_e4_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1225.949 ; gain = 0.000
+run 200 us
+Failure: Simulation Ended! TEST PASSATO
+Time: 1157500 ps  Iteration: 0  Process: /project_tb_e4/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example4.vhd
+$finish called at time : 1157500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example4.vhd" Line 125
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1225.949 ; gain = 0.000
+set_property top project_tb_e5 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+update_compile_order -fileset sim_2
+launch_simulation -simset [get_filesets sim_2 ]
+Command: launch_simulation -simset sim_2
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_e5' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_e5_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb_e5'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e5_behav xil_defaultlib.project_tb_e5 -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e5_behav xil_defaultlib.project_tb_e5 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb_e5
+Built simulation snapshot project_tb_e5_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e5_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_e5_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 23:30:56 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 113.812 ; gain = 17.715
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 23:30:56 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1225.949 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_e5_behav -key {Behavioral:sim_2:Functional:project_tb_e5} -tclbatch {project_tb_e5.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source project_tb_e5.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb_e5/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_e5_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1225.949 ; gain = 0.000
+run 200 us
+Failure: TEST FALLITO (WORKING ZONE). Expected  68  found 69
+Time: 1157500 ps  Iteration: 0  Process: /project_tb_e5/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example5.vhd
+$finish called at time : 1157500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example5.vhd" Line 114
+update_compile_order -fileset sim_2
+update_compile_order -fileset sim_2
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1225.949 ; gain = 0.000
+Command: launch_simulation -simset sim_2 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_e5' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_e5_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb_e5'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_2 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e5_behav xil_defaultlib.project_tb_e5 -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_e5_behav xil_defaultlib.project_tb_e5 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb_e5
+Built simulation snapshot project_tb_e5_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1225.949 ; gain = 0.000
+run 200 us
+Failure: Simulation Ended! TEST PASSATO
+Time: 1157500 ps  Iteration: 0  Process: /project_tb_e5/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example5.vhd
+$finish called at time : 1157500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-example5.vhd" Line 125
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+add_files -fileset sim_2 -norecurse C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-one_value.vhd
+update_compile_order -fileset sim_2
+set_property top project_tb_ov [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+update_compile_order -fileset sim_2
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_2 ]
+Command: launch_simulation -simset sim_2
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_ov' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_ov_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-one_value.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb_ov'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_ov_behav xil_defaultlib.project_tb_ov -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_ov_behav xil_defaultlib.project_tb_ov -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb_ov
+Built simulation snapshot project_tb_ov_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_ov_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_ov_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 24 23:56:12 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug 24 23:56:12 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1225.949 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_ov_behav -key {Behavioral:sim_2:Functional:project_tb_ov} -tclbatch {project_tb_ov.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source project_tb_ov.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb_ov/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+Failure: Simulation Ended! TEST PASSATO
+Time: 632500 ps  Iteration: 0  Process: /project_tb_ov/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-one_value.vhd
+$finish called at time : 632500 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-one_value.vhd" Line 103
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_ov_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1225.949 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Tue Aug 24 23:56:47 2021] Launched synth_1...
+Run output will be captured here: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.runs/synth_1/runme.log
+report_timing
+ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
+open report_timing
+couldn't open "report_timing": no such file or directory
+report_timing
+ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
+report_utilization
+ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
+report_utilization
+ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg484-1
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1528.297 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/clock.xdc]
+Finished Parsing XDC File [C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/clock.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1639.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:30 ; elapsed = 00:00:23 . Memory (MB): peak = 1768.898 ; gain = 542.949
+report_timing
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Aug 25 00:06:47 2021
+| Host         : DESKTOP-PB3IH3G running 64-bit major release  (build 9200)
+| Command      : report_timing
+| Design       : project_reti_logiche
+| Device       : 7a200t-fbg484
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             5.433ns  (required time - arrival time)
+  Source:                 rC2_out_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by clock  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            FSM_sequential_cur_state_reg[0]/CE
+                            (rising edge-triggered cell FDCE clocked by clock  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clock rise@10.000ns - clock rise@0.000ns)
+  Data Path Delay:        4.185ns  (logic 1.935ns (46.237%)  route 2.250ns (53.763%))
+  Logic Levels:           5  (CARRY4=2 LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.100ns = ( 12.100 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.424ns
+    Clock Pessimism Removal (CPR):    0.178ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clock rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  i_clk (IN)
+                         net (fo=0)                   0.000     0.000    i_clk
+                         IBUF (Prop_ibuf_I_O)         0.944     0.944 r  i_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     1.744    i_clk_IBUF
+                         BUFG (Prop_bufg_I_O)         0.096     1.840 r  i_clk_IBUF_BUFG_inst/O
+                         net (fo=88, unplaced)        0.584     2.424    i_clk_IBUF_BUFG
+                         FDCE                                         r  rC2_out_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.456     2.880 r  rC2_out_reg[3]/Q
+                         net (fo=3, unplaced)         0.983     3.863    rC2_out_reg[3]
+                         LUT6 (Prop_lut6_I0_O)        0.295     4.158 r  FSM_sequential_cur_state[3]_i_17/O
+                         net (fo=1, unplaced)         0.000     4.158    FSM_sequential_cur_state[3]_i_17_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     4.708 r  FSM_sequential_cur_state_reg[3]_i_11/CO[3]
+                         net (fo=1, unplaced)         0.009     4.717    FSM_sequential_cur_state_reg[3]_i_11_n_0
+                         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.178     4.895 r  FSM_sequential_cur_state_reg[3]_i_8/CO[1]
+                         net (fo=1, unplaced)         0.312     5.207    MaxMin_end
+                         LUT6 (Prop_lut6_I0_O)        0.332     5.539 r  FSM_sequential_cur_state[3]_i_4/O
+                         net (fo=1, unplaced)         0.449     5.988    FSM_sequential_cur_state[3]_i_4_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.124     6.112 r  FSM_sequential_cur_state[3]_i_1/O
+                         net (fo=4, unplaced)         0.497     6.609    FSM_sequential_cur_state[3]_i_1_n_0
+                         FDCE                                         r  FSM_sequential_cur_state_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clock rise edge)     10.000    10.000 r  
+                                                      0.000    10.000 r  i_clk (IN)
+                         net (fo=0)                   0.000    10.000    i_clk
+                         IBUF (Prop_ibuf_I_O)         0.811    10.811 r  i_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.760    11.570    i_clk_IBUF
+                         BUFG (Prop_bufg_I_O)         0.091    11.661 r  i_clk_IBUF_BUFG_inst/O
+                         net (fo=88, unplaced)        0.439    12.100    i_clk_IBUF_BUFG
+                         FDCE                                         r  FSM_sequential_cur_state_reg[0]/C
+                         clock pessimism              0.178    12.279    
+                         clock uncertainty           -0.035    12.243    
+                         FDCE (Setup_fdce_C_CE)      -0.202    12.041    FSM_sequential_cur_state_reg[0]
+  -------------------------------------------------------------------
+                         required time                         12.041    
+                         arrival time                          -6.609    
+  -------------------------------------------------------------------
+                         slack                                  5.433    
+
+
+
+
+set_property top project_tb1 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+update_compile_order -fileset sim_2
+set_property top project_tb_ov [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+update_compile_order -fileset sim_2
+launch_simulation -simset [get_filesets sim_2 ] -mode post-synthesis -type functional
+Command: launch_simulation -simset sim_2 -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/project_tb_ov_func_synth.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/project_tb_ov_func_synth.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb_ov' in fileset 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim'
+"xvhdl --incr --relax -prj project_tb_ov_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/project_tb_ov_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_reti_logiche'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-one_value.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'project_tb_ov'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim'
+"xelab -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_ov_func_synth xil_defaultlib.project_tb_ov -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fc9b0f61f5ff4d0ab88b4722b73405c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_ov_func_synth xil_defaultlib.project_tb_ov -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000000010111111")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111110000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11110100111101000100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111111110")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010100000100000101...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111110000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101010111011101010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000100010001000100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111010...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000001")(0...]
+Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000001010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000100111101000100...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101111000")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111011111101111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110111111111111")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11111011")(0,7)\]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101111111011101111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000110000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111011111111")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000001010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000010000000110000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101110111011101110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000011000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110111111101")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11110000111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000010101010011...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0011001000000010")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000100010001...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000010000")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01110100")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001111110010000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11100001111111111110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110000000011111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110111101100000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011010111111111001...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00010000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010100110101111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00001000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101100")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000100")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101111")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101000101011101")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000010011110111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000011010000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001000000001001")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100000010")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1011")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100000011110100")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000010")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000001100000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000001000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000001000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000001000000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111001100111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111011101110111010...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000001")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000100010001010100...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000100000000")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01000000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1101001000101101")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1011010001001011")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture structure of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb_ov
+Built simulation snapshot project_tb_ov_func_synth
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/xsim.dir/project_tb_ov_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/xsim.dir/project_tb_ov_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Aug 25 00:09:21 2021. For additional details about this file, please refer to the WebTalk help file at C:/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Aug 25 00:09:21 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 2346.348 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_ov_func_synth -key {Post-Synthesis:sim_2:Functional:project_tb_ov} -tclbatch {project_tb_ov.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source project_tb_ov.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb_ov/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+Failure: Simulation Ended! TEST PASSATO
+Time: 632600 ps  Iteration: 0  Process: /project_tb_ov/test  File: C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-one_value.vhd
+$finish called at time : 632600 ps : File "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/tests/Testbench-one_value.vhd" Line 103
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_ov_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:30 . Memory (MB): peak = 2346.348 ; gain = 14.199
+set_property top project_tb1 [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+update_compile_order -fileset sim_2
+launch_simulation -simset [get_filesets sim_2 ] -mode post-synthesis -type functional
+Command: launch_simulation -simset sim_2 -mode post-synthesis -type functional
+boost::filesystem::remove: Impossibile accedere al file. Il file è utilizzato da un altro processo: "C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/simulate.log"
+close_sim
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 2346.348 ; gain = 0.000
+ERROR: [Common 17-39] 'close_sim' failed due to earlier errors.
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: 3 (See C:/Users/emili/Documents/SCUOLA/POLITECNICO/3ANNO/Progetto_reti_logiche/Progetto-Reti-Logiche-20-21/project_reti_logiche/vivado_pid4336.debug)
+INFO: [Common 17-14] Message 'Vivado 12-106' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.

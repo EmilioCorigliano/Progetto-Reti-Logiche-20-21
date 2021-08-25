@@ -1,20 +1,14 @@
-	----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 -- University: Politecnico di Milano
 -- Student: Corigliano Emilio
 -- 
 -- Create Date: 05.08.2021 16:26:46
--- Design Name: 
+-- 
 -- Module Name: project_reti_logiche - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
+-- Project Name: project_reti_logiche
+-- Target Devices: FPGA xc7a200tfbg484-1
+-- Description: this project consists in the design of a component for 
+-- equalization of monochromatic images
 -- 
 ----------------------------------------------------------------------------------
 
@@ -125,7 +119,7 @@ type States is (
     WAIT_BEGIN, READ_COLUMNS, READ_ROWS, COMPUTE_N,
     PREPARE_MAXMIN_PHASE, COMPUTE_MAXMIN,
     COMPUTE_SL,
-    PREPARE_COMPUTATION, READ_PIXEL, WRITE_PIXEL,
+    READ_PIXEL, WRITE_PIXEL,
     END_COMPUTATION
 );
 signal cur_state, next_state : States;
@@ -146,7 +140,7 @@ begin
         o_address <= "0000000000000001" when READ_COLUMNS,
                     o_address_tmp0 when PREPARE_MAXMIN_PHASE,
                     o_address_tmp0 when COMPUTE_MAXMIN,
-                    o_address_tmp when PREPARE_COMPUTATION,
+                    o_address_tmp when COMPUTE_SL,
                     o_address_tmp when READ_PIXEL,
                     o_address_tmp when WRITE_PIXEL,
                     "0000000000000000" when others;
@@ -436,9 +430,6 @@ begin
                 end if;
                 
             when COMPUTE_SL =>
-                next_state <= PREPARE_COMPUTATION;
-                
-            when PREPARE_COMPUTATION =>
                 next_state <= READ_PIXEL;
                 
             when READ_PIXEL =>
@@ -539,10 +530,7 @@ begin
                 
             when COMPUTE_SL =>
                 rSL_load <= '1';
-                
-            when PREPARE_COMPUTATION =>
-                rC3_sel <='0';
-                
+                                
             when READ_PIXEL =>
                 o_en <= '1';
                 o_we <= '0';
@@ -563,9 +551,3 @@ begin
         end case;  
     end process;
 end Behavioral;
-
-
--- maybe can be deleted PREPARE_COMPUTATION, aggiusta 0 per SL, togli commenti inutili, aggiungi commenti utili
-
--- PREPARE_COMPUTATION: potrebbe essere ottimizzato, ma per chiarezza si lascia uno stato aggiuntivo
--- o_address: per semplicità i datapaths non hanno 

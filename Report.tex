@@ -31,6 +31,7 @@
 \usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
 \usepackage{listings} % used to write pieces of code
 \usepackage{xcolor}
+\usepackage{hyperref} % used to generate external links
 % These packages are all incorporated in the memoir class to one degree or another...
 
 %%% HEADERS & FOOTERS
@@ -100,11 +101,11 @@ Altri registri sono stati usati per poter realizzare varie parti del componente:
 \subsection{Fasi}
 Ci sono 4 fasi fondamentali che occorre attraversare per elaborare l'immagine, ognuna delle quali ha bisogno di dati elaborati precedentemente. Per questo non sono ulteriormente parallelizzabili.
 
-Si è scelto di affrontare ogni fase singolarmente per semplificare l'esposizione; questo approccio ha semplificato anche l'implementazione, di conseguenza le diverse fasi sono indipendenti tra loro. Seguendo questo approccio, però, si è limitata l'ottimizzazione della progettazione, facendo sì che alcuni componenti (come per esempio i contatori) non fossero in quantità minima ma sono stati replicati, in maniera leggermente diversa, per ogni fase in cui erano necessari. Questo però non è stato ritenuto un problema data la dimensione del progetto e la qualità dell'hardware per il quale è stato progettato; si è preferita la qualità e semplicità espositiva alla ottimizzazione progettuale.
+Si è scelto di affrontare ogni fase singolarmente per semplificare l'esposizione; questo approccio ha semplificato anche l'implementazione, di conseguenza le diverse fasi sono indipendenti tra loro. Seguendo questo metodo, però, si è limitata l'ottimizzazione del progetto, facendo sì che alcuni componenti (come per esempio i contatori o la dimensione di alcuni segnali) non fossero in numero o in dimensione minima ma rispecchiassero la volontà di fare un progetto più semplice da analizzare ed esporre. Questo approccio non è stato ritenuto un problema data la dimensione del progetto e la qualità dell'hardware per il quale è stato progettato; si è preferita la qualità e semplicità espositiva alla ottimizzazione progettuale.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=150mm]{datapaths/FSM.png}
+\includegraphics[scale=0.2995]{datapaths/FSM-vertical.png}
 \caption{FSM dell'elaborazione}
 \end{figure}
 
@@ -119,7 +120,7 @@ La prima fase è quella in cui si calcola la dimensione dell'immagine $N$ da equ
 
 
 \subsubsection{Ricerca dei valori massimi e minimi dei pixel}
-Nella seconda fase si cercano il valore massimo ($MAX\_PV$) e il valore minimo ($MIN\_PV$): si scorre una prima volta tutta l'immagine e si cercano contemporaneamente il valore massimo e minimo dei pixel presenti nell'immagine. Per tenere conto dei pixel letti e per generare l'indirizzo al quale leggere il valore si usa un contatore che parte da 0 e ad ogni ciclo di clock incrementa di 1, fino a raggiungere $N$; a questo punto verrà portato in alto il segnale di $MaxMin\_end$.
+Nella seconda fase si cercano il valore massimo ($MAX\_PV$) e il valore minimo ($MIN\_PV$): si scorre una prima volta tutta l'immagine e si cercano contemporaneamente il valore massimo e minimo dei pixel presenti nell'immagine mediante confronto con il valore presente nel registro. I valori iniziali dei registri per il valore massimo e minimo sono rispettivamente $0$ e $255$, risultato che ovviamente non potrà mai rimanere invariato. Infatti in ogni esecuzione il primo pixel letto sarà maggiore o uguale del valore di default del registro $rMax$ e minore o uguale del valore di default del registro $rMin$. Per tenere conto dei pixel letti e per generare l'indirizzo al quale leggere il valore si usa un contatore che parte da 0 e ad ogni ciclo di clock incrementa di 1, fino a raggiungere $N$; a questo punto verrà portato in alto il segnale di $MaxMin\_end$.
 
 \begin{figure}[h]
 \centering
@@ -129,7 +130,7 @@ Nella seconda fase si cercano il valore massimo ($MAX\_PV$) e il valore minimo (
 
 
 \subsubsection{Computazione del valore SHIFT\_LEVEL}
-La terza fase prevede il calcolo dello $SHIFT\_LEVEL$; questo viene ottenuto implementando una funzione combinatoria che esegue un controllo a soglie (nell'immagine rappresentata con il blocco $f(x)$ avente come input 8 bit e come output 4 bit). La funzione combinatoria prende in input $MAX\_PV - MIN\_PV + 1$ (quindi il $DELTA\_VALUE$ incrementato di 1) perchè si era pensato che sarebbe stato più semplice la generalizzazione. Infatti visualizzando gli shift level corrispondenti a tutti i valori di delta value possibili incrementati di uno (per esempio grazie allo script~\ref{lst:soglie}), si nota una semplice correlazione tra la posizione in cui compare il primo 1 e il valore dello $SHIFT\_LEVEL$ corrispondente.
+La terza fase prevede il calcolo dello $SHIFT\_LEVEL$; questo viene ottenuto implementando una funzione combinatoria che esegue un controllo a soglie (nel diagramma rappresentata con il blocco $f(x)$ avente come input 8 bit e come output 4 bit). La funzione combinatoria prende in input $MAX\_PV - MIN\_PV + 1$ (quindi il $DELTA\_VALUE$ incrementato di 1) perchè si era pensato che sarebbe stato più semplice la generalizzazione. Infatti visualizzando gli shift level corrispondenti a tutti i valori di delta value possibili incrementati di uno (per esempio grazie allo script~\ref{lst:soglie}), si nota una semplice correlazione tra la posizione in cui compare il primo 1 e il valore dello $SHIFT\_LEVEL$ corrispondente.
 
 \begin{lstlisting}[language=Python, caption=Generazione di soglie, label={lst:soglie}]
 for i in range(256):
@@ -152,16 +153,18 @@ La quarta fase, quella finale, provvede a equalizzare l'immagine tramite l'algor
 \caption{Equalizzazione}
 \end{figure}
 
+\subsubsection{Fine computazione}
+La computazione finisce quando nello stato $WRITE\_PIXEL$ è alto il segnale $computation\_end$ oppure se alla fine dell'elaborazione del valore $N$ questo è $0$. Raggiunto lo stato di $END\_COMPUTATION$ si alza $o\_done$ e si aspetta in questo stato fintantoché $i\_start$ è alto. Quando questo segnale viene abbassato si ritorna allo stato $WAIT\_BEGIN$ e si riabbassa $o\_done$. Una nuova esecuzione partirà quando viene alzato di nuovo il segnale $i\_start$.
 
 
 \section{Risultati}
 Il componente è stato sviluppato, sintetizzato e testato sia con simulazioni behavioural che post-synthetis.
 
 \subsection{testing}
-Per testare il componente sviluppato sono stati scritti (con l'aiuto di script in python) dei testbanch. Mentre alcuni erano generati con dati random, altri sono stati creati per controllare dei corner-cases o dei punti critici del codice. Di seguito sono leggermente approfonditi vari testbanch usati sul componente:
+Per testare il componente sviluppato sono stati scritti (con l'aiuto di script in python) dei testbanch. La maggior parte dei test con input random sono stati creati grazie ad un \href{https://github.com/davidemerli/RL-generator-2020-2021.git}{generatore di test} disponibile pubblicamente. Tutti gli altri test sono stati creati con un generatore custom che permetteva di creare dei testbanch a partire da configurazioni particolari della memoria scritte a mano così da controllare dei corner-cases o dei punti critici del codice. Di seguito sono leggermente approfonditi vari testbanch usati sul componente:
 
 \begin{itemize}
-\item dati casuali: diversi test sono stati implementati con dimensione e immagine iniziale casuali; in questi si includono anche tutti i testbanch fornitoci in allegato alla specifica;
+\item dati casuali: centinaia di test sono stati implementati con dimensione e immagine iniziale casuali; in questi si includono anche tutti i testbanch fornitoci in allegato alla specifica. 
 \item immagini grandi: vari test con dimensione dell'immagine molto grande (di cui uno con dimensione 128x128, cioè la dimensione massima) e immagine generata casualmente; questo serve a testare in particolar modo se le dimensioni dei collegamenti tra i vari componenti sono sufficientemente grandi e se la fase di calcolo della dimensione dell'immagine gestisce il caso limite della dimensione massima.
 \item immagine di un pixel: test per analizzare il comportamento nel caso in cui ci sia solo un pixel;
 \item zero righe o zero colonne: due test per provare il funzionamento del componente se un dato tra righe o colonne è 0. Utile per testare un caso limite per la fase di calcolo della dimensione dell'immagine;
@@ -171,11 +174,7 @@ Per testare il componente sviluppato sono stati scritti (con l'aiuto di script i
 \end{itemize}
 
 \subsection{Report di sintesi}
-Analizzando il report post sintesi sui timing si evince che il componente rispetta i constraints imposti: di 10ns di clock i segnali si assestano dopo appena 4.610ns, questo ci suggerisce che il componente potrebbe tranquillamente funzionare al doppio dela frequenza, lasciando comunque margine per far stabilizzare tutte le uscite prima della fine del ciclo di clock. Inoltre, analizzando il report sugli utilizzi, non si trovano latch inferiti.
-
-%TODO: reset asincrono e comportamento del segnale i\_start e o\_end
-%TODO: testare tutti i livelli dello shift level al margine?
-
+Analizzando il report post sintesi sui timing si evince che il componente rispetta i constraints imposti: lo slack è di $5.239ns$ ed è positivo, quindi i constraints (di $10ns$ di clock) sono soddisfatti. I segnali si assestano dopo appena $4.610ns$, questo ci suggerisce che il componente potrebbe tranquillamente funzionare al doppio della frequenza, lasciando comunque margine per far stabilizzare tutte le uscite prima della fine del ciclo di clock. Inoltre, analizzando il report sugli utilizzi, non si trovano latch inferiti.
 
 %\section{Conclusioni}
 

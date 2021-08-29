@@ -1,0 +1,3 @@
+[submodule "tests/RL-generator-2020-2021"]
+	path = tests/RL-generator-2020-2021
+	url = https://github.com/davidemerli/RL-generator-2020-2021.git

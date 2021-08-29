@@ -62,8 +62,8 @@ end component;
 
 -- registers and signals definition (internal signals)
 signal r1_out : std_logic_vector (7 downto 0);
-signal rN_in : std_logic_vector (15 downto 0);
-signal rN_out : std_logic_vector (15 downto 0);
+signal rN_in : std_logic_vector (15 downto 0); -- Could be optimized to be 14 bit
+signal rN_out : std_logic_vector (15 downto 0); -- Could be optimized to be 14 bit
 signal rC1_in : std_logic_vector (7 downto 0);
 signal rC1_out : std_logic_vector (7 downto 0);
 
@@ -83,8 +83,8 @@ signal muxSL_in : std_logic_vector (7 downto 0);
 signal rSL_in : std_logic_vector (3 downto 0);
 signal rSL_out : std_logic_vector (3 downto 0);
 
-signal rC3_in : std_logic_vector (15 downto 0);
-signal rC3_out : std_logic_vector (15 downto 0);
+signal rC3_in : std_logic_vector (15 downto 0); -- Could be optimized to be 14 bit
+signal rC3_out : std_logic_vector (15 downto 0); -- Could be optimized to be 14 bit 
 signal o_address_tmp : std_logic_vector (15 downto 0);
 
 -- input handled by the FSM
@@ -135,7 +135,7 @@ begin
         end if;
     end process;
     
-    -- o_address
+    -- signal o_address
     with cur_state select
         o_address <= "0000000000000001" when READ_COLUMNS,
                     o_address_tmp0 when PREPARE_MAXMIN_PHASE,

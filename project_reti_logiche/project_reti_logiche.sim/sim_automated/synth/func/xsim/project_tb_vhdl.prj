@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"project_tb_func_synth.vhd" \
+"../../../../../../tests/RL-generator-2020-2021/gen_testbench_reset.vhd" \
+
+# Do not sort compile order
+nosort

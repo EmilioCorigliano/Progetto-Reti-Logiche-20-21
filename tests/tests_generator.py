@@ -1,3 +1,5 @@
+## generator that creates testbanches with random data
+
 import math
 from random import randrange
 

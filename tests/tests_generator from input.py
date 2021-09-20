@@ -1,3 +1,5 @@
+## this generator creates a testbanch from a custom memory content
+
 import math
 from random import randrange
 

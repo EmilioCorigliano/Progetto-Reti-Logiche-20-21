@@ -1,3 +1,5 @@
+## this generator generates the testbanches from the examples written in the specification
+
 import math
 from random import randrange
 
